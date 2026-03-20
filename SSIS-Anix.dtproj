@@ -5,8 +5,8 @@
   <SchemaVersion>9.0.1.0</SchemaVersion>
   <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
   <Database>
-    <Name>SSIS-Anix.database</Name>
-    <FullPath>SSIS-Anix.database</FullPath>
+    <Name>SSIS-Anix 1.database</Name>
+    <FullPath>C:\Users\kes1878\source\repos\SSIS-Anix\SSIS-Anix 1.database</FullPath>
   </Database>
   <DataSources />
   <DataSourceViews />
@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">KES18</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZH3qKVd1l0qy4De83DnWiwAAAAACAAAAAAADZgAAwAAAABAAAABGPpDUdbdDlpDMoaFAVTx6AAAAAASAAACgAAAAEAAAAB6szmlqAfjXfz924QllSOGIAAAAoIw/9euZ8T7ieZaDBb9FUK+pWjRWYF+kIeNMeGGZfh6Oup5JIClXdYyzix0eDh7Zh3SS/Nb/aevVh9LgLQ3ueZPickG08FeLeKhkqWb0B6RgX8IkfkCmBqp7vj45vz2J9ucByGBCsvnEIAbDtwAIjqyMQRybn/RIRxpLFRFGHz8hs4hb6pA62BQAAAAfmK/Oe8Xjp29b1y8CgJyH3r77bA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAZH3qKVd1l0qy4De83DnWiwAAAAACAAAAAAADZgAAwAAAABAAAACP/iReIsIsNQ7BqaozjInKAAAAAASAAACgAAAAEAAAAGBtO2y6zDtNwjhgUqrgMN6IAAAAQj5Q8Ub7CaOoBsEWpRD2aOCkL20Hrn/5JPg5yeTq1lfnZGJxVqDBdxqNMzqjH4xnoiWbzSaOsF5GsZLF0kg0mODNfXpbqJs/ghOezS6oCycElPQOgpBnOlnTToTdnTrFrQXSLXaptphb+RqoBYsf+TVoJ8zSBIKIB/bK1lVDty7Bdyt1JXakEBQAAAAjQYjmeJ9neRuF5MIjvPGoDmvCnw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -38,14 +38,14 @@
           <SSIS:PackageInfo>
             <SSIS:PackageMetaData SSIS:Name="КПТ Полный.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{24D4B5D4-9591-4F79-8602-A76D856F9EBA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{7D360BD1-B8B1-4095-B64E-4DA32276DA5D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="Name">КПТ по причинам</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionBuild">328</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0788106D-A704-4A25-9762-76D7CD1D373D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{524F21EB-0C6E-4A06-883E-83E77C9582DA}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -432,7 +432,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=DWH;Integrated Security=True;Application Name=SSIS-КПТ по причинам-{8EC904BB-27DD-447F-93B7-2CD21B1FBA73}s19-olap.DWH;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=DWH;Integrated Security=True;Application Name=SSIS-КПТ по причинам-{1862283E-3581-42E2-9F68-77BF8CCB7B99}s19-olap.DWH;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -698,7 +698,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=KPT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{92752221-6FC5-4FF9-BDC7-877DAD92A6E3}s8-olap-test.KPT.reader;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=KPT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{FEA67F71-8910-450A-B822-9178BD1396DB}s8-olap-test.KPT.reader;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -846,7 +846,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=KPT;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{AC570EA3-B358-444E-98A3-B1E6892DBDFF}s8-olap-test.KPT.reader1";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=KPT;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{ACF2DB4A-C351-4E89-845A-CFB8050E8574}s8-olap-test.KPT.reader1";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -964,7 +964,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=olap-rozn;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{81C6CE1B-E18D-4C6E-A954-DF0AB4C3D22C}s8-olap-test.olap-rozn.reader";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=s19-olap;Initial Catalog=olap-rozn;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{D65629F6-260B-4BFE-B31F-29C48DA543D4}s8-olap-test.olap-rozn.reader";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1082,7 +1082,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{E14D06E6-C672-42E7-8AFB-FA7B334E8049}S19-RDSAPP-RSC.rsc.rsc-sql-reader";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1200,7 +1200,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=S19-STORAGE-SQL;Initial Catalog=CS;Integrated Security=True;Application Name="SSIS-КПТ по причинам-{F622B4C1-BD8E-4D23-8EA5-3D7D05A6FF8C}S19-STORAGE-SQL.CS.reader";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=S19-STORAGE-SQL;Initial Catalog=CS;Integrated Security=True;Application Name="SSIS-КПТ по причинам-{FFF61693-76BC-4948-A909-8EA07DFCC553}S19-STORAGE-SQL.CS.reader";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1318,7 +1318,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=serv-term;Initial Catalog=rozn;Integrated Security=True;Asynchronous Processing=True;Connect Timeout=0;Application Name="SSIS-КПТ по причинам-{27E91A5E-C5F4-4B1D-9B03-15381D6189FE}serv-term.rozn.reader1";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=serv-term;Initial Catalog=rozn;Integrated Security=True;Asynchronous Processing=True;Connect Timeout=0;Application Name="SSIS-КПТ по причинам-{92474EE0-1E7C-457B-B820-3CD7227CA7F8}serv-term.rozn.reader1";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1435,7 +1435,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2026-03-20T07:29:14.5409343Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>

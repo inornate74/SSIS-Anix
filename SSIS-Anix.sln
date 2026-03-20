@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.36324.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS-Anix", "SSIS-Anix.dtproj", "{6C1CF0B7-B290-49E8-AFC2-ADF658863B2F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSIS", "SSIS", "{4A2DE9B8-32F2-47C4-A951-B2B99D39071E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -15,6 +17,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6C1CF0B7-B290-49E8-AFC2-ADF658863B2F} = {4A2DE9B8-32F2-47C4-A951-B2B99D39071E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80218A5E-06A3-4253-A7F4-4729F05AB4EC}
