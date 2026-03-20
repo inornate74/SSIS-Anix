@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/16/2022 8:20:00 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ по причинам"
   DTS:PackageType="5"
-  DTS:VersionBuild="328"
-  DTS:VersionGUID="{524F21EB-0C6E-4A06-883E-83E77C9582DA}">
+  DTS:VersionBuild="329"
+  DTS:VersionGUID="{6707B855-635E-42F7-AC32-823C9104F511}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -17118,7 +17118,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод временный 3"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17137,7 +17137,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_Временный1"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17175,7 +17175,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Удалить строки из карты причин падения КПТ (ОТБОР ПО ДАТЕ)"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -23555,35 +23555,23 @@ AND дата between @dateN and @date</property>
           Id="Package\КПТ\ОТБРС\Загрузка матрицы\s8-oalp-test Очистка таблицы ОТБРС_Матрица"
           TopLeft="7,5.5" />
         <NodeLayout
-          Size="298,42"
+          Size="179,42"
           Id="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)"
           TopLeft="6.75,81.792452830189" />
         <EdgeLayout
           Id="Package\КПТ\ОТБРС\Загрузка матрицы.PrecedenceConstraints[Constraint]"
-          TopLeft="103,56.5">
+          TopLeft="99.625,56.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="52.75,25.292452830189"
+              EndConnector="0,25.292452830189"
               Start="0,0"
-              End="52.75,17.792452830189">
+              End="0,17.792452830189">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.6462264150945" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,8.6462264150945"
-                    Point2="0,12.6462264150945"
-                    Point3="4,12.6462264150945" />
-                  <mssgle:LineSegment
-                    End="48.75,12.6462264150945" />
-                  <mssgle:CubicBezierSegment
-                    Point1="48.75,12.6462264150945"
-                    Point2="52.75,12.6462264150945"
-                    Point3="52.75,16.6462264150945" />
-                  <mssgle:LineSegment
-                    End="52.75,17.792452830189" />
+                    End="0,17.792452830189" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -23595,8 +23583,8 @@ AND дата between @dateN and @date</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="310,179"
-          Size="310,222"
+          PanelSize="204,149"
+          Size="204,192"
           Id="Package\КПТ\ОТБРС\Загрузка матрицы"
           TopLeft="263.142857142858,4.25" />
         <NodeLayout
@@ -23807,8 +23795,8 @@ AND дата between @dateN and @date</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="242,243"
-          Size="242,286"
+          PanelSize="241,195"
+          Size="241,238"
           Id="Package\КПТ\ОТБРС\Звгрузка поставщиков"
           TopLeft="15.5,4.75" />
         <ContainerLayout
@@ -23927,7 +23915,7 @@ AND дата between @dateN and @date</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="499,186"
+          PanelSize="499,187"
           Size="499,230"
           Id="Package\КПТ\Формирование итоговой таблицы"
           TopLeft="926,243" />
