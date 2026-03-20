@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="S8-OLAP-TEST"
   DTS:CreatorName="TDANIX\kma1860"
-  DTS:DTSID="{24D4B5D4-9591-4F79-8602-A76D856F9EBA}"
+  DTS:DTSID="{7D360BD1-B8B1-4095-B64E-4DA32276DA5D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5467.0"
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ по причинам"
   DTS:PackageType="5"
   DTS:VersionBuild="328"
-  DTS:VersionGUID="{0788106D-A704-4A25-9762-76D7CD1D373D}">
+  DTS:VersionGUID="{524F21EB-0C6E-4A06-883E-83E77C9582DA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[RSC]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3C79EF75-FC60-4BAA-87C4-B3DF3BF9C414}"
+      DTS:DTSID="{767D6312-47AC-4544-AA13-6FB038C56326}"
       DTS:ObjectName="RSC">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -31,7 +31,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-bi-db.KPT_prod]"
       DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{A46862BE-EBE7-4A46-8485-6E2C6B374A7E}"
+      DTS:DTSID="{B9D01B4D-0938-499E-B46A-2B6E4A6E8E31}"
       DTS:ObjectName="s19-bi-db.KPT_prod">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -43,7 +43,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-bi-db.KPT_prod 1]"
       DTS:CreationName="MSOLAP100"
-      DTS:DTSID="{F78D74AA-153D-4583-92E9-402A6EEDFC0E}"
+      DTS:DTSID="{138AE13B-2878-4EB4-B67C-BF7019D35CB0}"
       DTS:ObjectName="s19-bi-db.KPT_prod 1">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -55,17 +55,17 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-olap.DWH]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{8EC904BB-27DD-447F-93B7-2CD21B1FBA73}"
+      DTS:DTSID="{1862283E-3581-42E2-9F68-77BF8CCB7B99}"
       DTS:ObjectName="s19-olap.DWH">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=DWH;Integrated Security=True;Application Name=SSIS-КПТ по причинам-{8EC904BB-27DD-447F-93B7-2CD21B1FBA73}s19-olap.DWH;" />
+          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=DWH;Integrated Security=True;Application Name=SSIS-КПТ по причинам-{1862283E-3581-42E2-9F68-77BF8CCB7B99}s19-olap.DWH;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-olap.KPT]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{9939634F-DB99-4DC6-9B42-7CFFCE6969D8}"
+      DTS:DTSID="{16BA87CE-0426-4507-A26F-10CD856093B4}"
       DTS:ObjectName="s19-olap.KPT">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -77,63 +77,63 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-olap.KPT.reader]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{92752221-6FC5-4FF9-BDC7-877DAD92A6E3}"
+      DTS:DTSID="{FEA67F71-8910-450A-B822-9178BD1396DB}"
       DTS:ObjectName="s19-olap.KPT.reader">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=KPT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{92752221-6FC5-4FF9-BDC7-877DAD92A6E3}s8-olap-test.KPT.reader;" />
+          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=KPT;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{FEA67F71-8910-450A-B822-9178BD1396DB}s8-olap-test.KPT.reader;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-olap.KPT.reader ADO .net]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+      DTS:DTSID="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
       DTS:ObjectName="s19-olap.KPT.reader ADO .net">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=KPT;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{AC570EA3-B358-444E-98A3-B1E6892DBDFF}s8-olap-test.KPT.reader1&quot;;" />
+          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=KPT;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{ACF2DB4A-C351-4E89-845A-CFB8050E8574}s8-olap-test.KPT.reader1&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[s19-olap.olap-rozn.reader ADO .net]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{81C6CE1B-E18D-4C6E-A954-DF0AB4C3D22C}"
+      DTS:DTSID="{D65629F6-260B-4BFE-B31F-29C48DA543D4}"
       DTS:ObjectName="s19-olap.olap-rozn.reader ADO .net">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=olap-rozn;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{81C6CE1B-E18D-4C6E-A954-DF0AB4C3D22C}s8-olap-test.olap-rozn.reader&quot;;" />
+          DTS:ConnectionString="Data Source=s19-olap;Initial Catalog=olap-rozn;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{D65629F6-260B-4BFE-B31F-29C48DA543D4}s8-olap-test.olap-rozn.reader&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[S19-RDSAPP-RSC.rsc.rsc-sql-reader ADO .net]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{E14D06E6-C672-42E7-8AFB-FA7B334E8049}"
+      DTS:DTSID="{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}"
       DTS:ObjectName="S19-RDSAPP-RSC.rsc.rsc-sql-reader ADO .net">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{E14D06E6-C672-42E7-8AFB-FA7B334E8049}S19-RDSAPP-RSC.rsc.rsc-sql-reader&quot;;" />
+          DTS:ConnectionString="Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[S19-STORAGE-SQL.CS.reader]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{F622B4C1-BD8E-4D23-8EA5-3D7D05A6FF8C}"
+      DTS:DTSID="{FFF61693-76BC-4948-A909-8EA07DFCC553}"
       DTS:ObjectName="S19-STORAGE-SQL.CS.reader">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=S19-STORAGE-SQL;Initial Catalog=CS;Integrated Security=True;Application Name=&quot;SSIS-КПТ по причинам-{F622B4C1-BD8E-4D23-8EA5-3D7D05A6FF8C}S19-STORAGE-SQL.CS.reader&quot;;" />
+          DTS:ConnectionString="Data Source=S19-STORAGE-SQL;Initial Catalog=CS;Integrated Security=True;Application Name=&quot;SSIS-КПТ по причинам-{FFF61693-76BC-4948-A909-8EA07DFCC553}S19-STORAGE-SQL.CS.reader&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[serv-term.rozn.reader ADO .net]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{27E91A5E-C5F4-4B1D-9B03-15381D6189FE}"
+      DTS:DTSID="{92474EE0-1E7C-457B-B820-3CD7227CA7F8}"
       DTS:ObjectName="serv-term.rozn.reader ADO .net">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=serv-term;Initial Catalog=rozn;Integrated Security=True;Asynchronous Processing=True;Connect Timeout=0;Application Name=&quot;SSIS-КПТ по причинам-{27E91A5E-C5F4-4B1D-9B03-15381D6189FE}serv-term.rozn.reader1&quot;;" />
+          DTS:ConnectionString="Data Source=serv-term;Initial Catalog=rozn;Integrated Security=True;Asynchronous Processing=True;Connect Timeout=0;Application Name=&quot;SSIS-КПТ по причинам-{92474EE0-1E7C-457B-B820-3CD7227CA7F8}serv-term.rozn.reader1&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -474,7 +474,7 @@
       DTS:refId="Package\КПТ"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Контейнер последовательности"
-      DTS:DTSID="{A902913B-6E83-4F47-A851-C38459AC0FAF}"
+      DTS:DTSID="{3431DA7E-0198-4DD5-AE6D-B1C00FB29338}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="КПТ">
@@ -484,7 +484,7 @@
           DTS:refId="Package\КПТ\DWH Продажи"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{6A116544-0D3A-4462-B515-C475B39B9E10}"
+          DTS:DTSID="{A9AC028F-9E85-435D-82C1-F36FDF35D590}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="DWH Продажи">
@@ -494,7 +494,7 @@
               DTS:refId="Package\КПТ\DWH Продажи\Очистка таблиц"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{CB1DA161-E354-419B-87A5-A49299DD0BB5}"
+              DTS:DTSID="{2A3AEF8C-ED4F-4452-817E-7BFCB1FA2CE6}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблиц"
@@ -505,7 +505,7 @@
                 DTS:FilterKind="0" />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                  SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                   SQLTask:TimeOut="30"
                   SQLTask:SqlStatementSource="truncate table Среднедневные;&#xA;truncate table СреднедневныеПоДнямНедели;&#xA;truncate table OLAP_Продажи;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
@@ -514,7 +514,7 @@
               DTS:refId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{A1560604-B4C0-4FD5-8D00-A2CF7916A81D}"
+              DTS:DTSID="{5B09AB24-F71F-472A-9462-0F10AC92C3E8}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Продажи OLAP (ОТБОР ПО ДАТЕ)"
@@ -925,7 +925,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
               DTS:refId="Package\КПТ\DWH Продажи\Среднедневные OLAP (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{72EF819F-80EF-4D41-AB99-54F8311610E2}"
+              DTS:DTSID="{A4A59985-52BC-4DFA-8122-342162AC88FE}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Среднедневные OLAP (ОТБОР ПО ДАТЕ)"
@@ -1329,7 +1329,7 @@ and Код_товара is not null
               DTS:refId="Package\КПТ\DWH Продажи\Среднедневные по дням недели (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{062E0FE3-EBF4-44EF-B523-FFEEDFD748E1}"
+              DTS:DTSID="{BFA14DFE-4480-4BC8-B3EC-459526766A61}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Среднедневные по дням недели (ОТБОР ПО ДАТЕ)"
@@ -1734,7 +1734,7 @@ left join
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\DWH Продажи.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
-              DTS:DTSID="{1C804FBA-87FB-4E1C-85EC-61A574C80C7F}"
+              DTS:DTSID="{9FE19ADD-3554-4D35-8BF1-82AC95AC9D4B}"
               DTS:From="Package\КПТ\DWH Продажи\Очистка таблиц"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
@@ -1742,7 +1742,7 @@ left join
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\DWH Продажи.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
-              DTS:DTSID="{294022B7-4E95-461F-B3E0-1A562971AEA2}"
+              DTS:DTSID="{2D592147-12B6-4839-8146-B70DBC893089}"
               DTS:From="Package\КПТ\DWH Продажи\Очистка таблиц"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
@@ -1750,7 +1750,7 @@ left join
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\DWH Продажи.PrecedenceConstraints[Constraint 3]"
               DTS:CreationName=""
-              DTS:DTSID="{74824516-B21D-4202-961C-8C646B1A9F9A}"
+              DTS:DTSID="{D34A7912-4C45-4203-92A6-D8898300B931}"
               DTS:From="Package\КПТ\DWH Продажи\Очистка таблиц"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 3"
@@ -1761,7 +1761,7 @@ left join
           DTS:refId="Package\КПТ\RSC"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{DAAD7992-6B68-4864-A4EB-59056D4F379A}"
+          DTS:DTSID="{5ECB7B78-0997-4AEB-AAD7-FB0F2C2A1987}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="RSC">
@@ -1771,7 +1771,7 @@ left join
               DTS:refId="Package\КПТ\RSC\RSC Приход"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{988BFA3D-C641-48D1-B23F-47EA426A4B57}"
+              DTS:DTSID="{EFDF6219-5807-4302-8037-261A4FE8EB00}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="RSC Приход">
@@ -1781,7 +1781,7 @@ left join
                   DTS:refId="Package\КПТ\RSC\RSC Приход\Очистка таблицы RSC_Приход"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Задача &quot;Выполнение SQL&quot;"
-                  DTS:DTSID="{9D8686C3-0403-4909-A55B-2553B8A97ED7}"
+                  DTS:DTSID="{DCF4B55B-0E0C-480E-B9D6-386149807E1E}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC_Приход"
@@ -1789,7 +1789,7 @@ left join
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{92752221-6FC5-4FF9-BDC7-877DAD92A6E3}"
+                      SQLTask:Connection="{FEA67F71-8910-450A-B822-9178BD1396DB}"
                       SQLTask:SqlStatementSource="truncate table RSC_Приход;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
@@ -1797,7 +1797,7 @@ left join
                   DTS:refId="Package\КПТ\RSC\RSC Приход\Приход RSC (ОТБОР ПО ДАТЕ)"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{3857303D-4A07-4464-8FAA-9C22558DBB60}"
+                  DTS:DTSID="{22825798-8134-4D75-BD5F-DDE1337A829E}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Приход RSC (ОТБОР ПО ДАТЕ)"
@@ -2387,7 +2387,7 @@ and cast(tov._Code  as nvarchar(10))!='          '</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\RSC\RSC Приход.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{EC69BEB4-F0F1-4865-8D0A-63F6A7728D93}"
+                  DTS:DTSID="{FD2DC65F-32C7-4805-8978-090F85B073CE}"
                   DTS:From="Package\КПТ\RSC\RSC Приход\Очистка таблицы RSC_Приход"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -2398,7 +2398,7 @@ and cast(tov._Code  as nvarchar(10))!='          '</property>
               DTS:refId="Package\КПТ\RSC\Незаказанный товар по причинам"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{AC7BEDB4-546B-476A-907D-045F8CBC3513}"
+              DTS:DTSID="{47FA87CD-7539-4B93-9546-D39ED683E336}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Незаказанный товар по причинам">
@@ -2408,7 +2408,7 @@ and cast(tov._Code  as nvarchar(10))!='          '</property>
                   DTS:refId="Package\КПТ\RSC\Незаказанный товар по причинам\Загрузка незаказанного товара по причинам из RSC (ОТБОР ПО ДАТЕ)"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{E5BA9227-191C-4653-A364-668A3AC0CC35}"
+                  DTS:DTSID="{44E3FE04-E3B6-4138-9B33-23A68BBA667F}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка незаказанного товара по причинам из RSC (ОТБОР ПО ДАТЕ)"
@@ -2869,7 +2869,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                   DTS:refId="Package\КПТ\RSC\Незаказанный товар по причинам\Очистка таблицы RSC Незаказанный товар по причинам"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{A84493F7-4A16-44FF-8697-7822B9222008}"
+                  DTS:DTSID="{9937CAD6-74D0-4D44-992D-D12D75B5230D}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC Незаказанный товар по причинам"
@@ -2880,7 +2880,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:SqlStatementSource="truncate table RSC_НезаказанныйТоварПоПричинам" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
@@ -2889,7 +2889,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\RSC\Незаказанный товар по причинам.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{AA39A43B-D935-4363-B651-4D53514E33F5}"
+                  DTS:DTSID="{F7744BE1-8E12-4C4D-B89F-04BD96318968}"
                   DTS:From="Package\КПТ\RSC\Незаказанный товар по причинам\Очистка таблицы RSC Незаказанный товар по причинам"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -2900,7 +2900,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
               DTS:refId="Package\КПТ\RSC\Статусы не заказывать"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{A86EF2B4-8077-4376-A3A0-B5351A592F33}"
+              DTS:DTSID="{79C4F16D-243C-4F68-92F3-9981B817B6AD}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Статусы не заказывать">
@@ -2910,7 +2910,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                   DTS:refId="Package\КПТ\RSC\Статусы не заказывать\Загрузка статусов НЕ ЗАКАЗЫВАТЬ из RSC (ОТБОР ПО ДАТЕ)"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{1CA83242-6B68-4FF4-9ED6-2C86FDD6DBE5}"
+                  DTS:DTSID="{63B3F33F-17A7-402A-B254-06D6817FCF09}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка статусов НЕ ЗАКАЗЫВАТЬ из RSC (ОТБОР ПО ДАТЕ)"
@@ -3289,7 +3289,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:refId="Package\КПТ\RSC\Статусы не заказывать\Очистка таблицы Статусы не заказывать"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{296A9EFE-3215-469C-AF4F-F8F938CCF254}"
+                  DTS:DTSID="{E978C88D-5E23-498D-82F4-1DF55C30F321}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы Статусы не заказывать"
@@ -3298,7 +3298,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:SqlStatementSource="truncate table RSC_СтатусыНеЗаказывать" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
@@ -3307,7 +3307,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\RSC\Статусы не заказывать.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{D9F9B1C1-29BA-40E5-B2D0-2ADFEB3C46FF}"
+                  DTS:DTSID="{249885FD-94F7-4495-A8C2-8C04AD2559B2}"
                   DTS:From="Package\КПТ\RSC\Статусы не заказывать\Очистка таблицы Статусы не заказывать"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -3320,7 +3320,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
           DTS:refId="Package\КПТ\ОТБРС"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{AD866B43-1BB4-48D3-BD99-42D69F66050A}"
+          DTS:DTSID="{217726D7-A39B-4D47-8BC2-11CB80BB3F6C}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="ОТБРС">
@@ -3330,7 +3330,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
               DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{61046273-9E57-4924-9AA1-182ADD5DB3F1}"
+              DTS:DTSID="{8E27F651-8033-47FB-8129-AC57A9EB6193}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка магазинов">
@@ -3340,18 +3340,18 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов\s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{35FF3C33-6A9A-49C1-8885-2AB7983592DC}"
+                  DTS:DTSID="{0CD27B50-08FF-4DC3-831D-94E506C58727}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table [dbo].[Магазины_temp_load]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -3360,7 +3360,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов\Загрузка магазинов из ОТБРС"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{A810E75A-FF7F-4BA4-972D-98EED53FB2B6}"
+                  DTS:DTSID="{CA69A4FF-7289-4AFD-B894-68C955DBB3D9}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка магазинов из ОТБРС"
@@ -3881,18 +3881,18 @@ where
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов\Слияние таблиц магазины"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{AE8FF8C4-A9B7-41E0-9971-906757F48DD5}"
+                  DTS:DTSID="{6FE896B3-2F52-4E89-940A-FC2A676D8938}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц магазины"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:SqlStatementSource="MERGE dbo.Магазины AS Work&#xA;USING dbo.Магазины_temp_load AS Temp&#xA;ON (Work.Код = Temp.Код)&#xA;WHEN NOT MATCHED BY TARGET&#xA;    THEN INSERT(Код, Магазин, Регион, &#xA;&#x9;&#x9;&#x9;&#x9;Куст, Кустовой, ДатаОткрытия, &#xA;&#x9;&#x9;&#x9;&#x9;ДатаЗакрытия, ДатаНачалаРеконструкции, &#xA;&#x9;&#x9;&#x9;&#x9;ДатаКонцаРеконструкции, КатегорияПоПлощади)&#xA;&#x9;&#x9;VALUES(Temp.Код, Temp.Магазин, Temp.Регион, &#xA;&#x9;&#x9;&#x9;&#x9;Temp.Куст, Temp.Кустовой, Temp.ДатаОткрытия, &#xA;&#x9;&#x9;&#x9;&#x9;Temp.ДатаЗакрытия, Temp.ДатаНачалаРеконструкции, &#xA;&#x9;&#x9;&#x9;&#x9;Temp.ДатаКонцаРеконструкции, Temp.КатегорияПоПлощади)&#xA;WHEN MATCHED&#xA;    THEN UPDATE SET &#xA;    Work.Код = Temp.Код, &#xA;    Work.Магазин = Temp.Магазин, &#xA;    Work.Регион = Temp.Регион,&#xA;    Work.Куст = Temp.Куст,&#xA;    Work.Кустовой = Temp.Кустовой,&#xA;    Work.ДатаОткрытия = Temp.ДатаОткрытия,&#xA;    Work.ДатаЗакрытия = Temp.ДатаЗакрытия,&#xA;    Work.ДатаНачалаРеконструкции = Temp.ДатаНачалаРеконструкции,&#xA;    Work.ДатаКонцаРеконструкции = Temp.ДатаКонцаРеконструкции,&#xA;    Work.КатегорияПоПлощади = Temp.КатегорияПоПлощади;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
@@ -3901,7 +3901,7 @@ where
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{DA6D0474-4330-4BA9-8105-A3D989D89D38}"
+                  DTS:DTSID="{E6AAF4F8-9FAE-414A-A639-91F8C0262D61}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка магазинов\s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -3909,7 +3909,7 @@ where
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка магазинов.PrecedenceConstraints[Constraint 1]"
                   DTS:CreationName=""
-                  DTS:DTSID="{C7199BE9-491F-41F1-9558-962722673CC8}"
+                  DTS:DTSID="{48AB7556-F3F3-43FC-9361-D90DBDAB5194}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка магазинов\Загрузка магазинов из ОТБРС"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint 1"
@@ -3920,7 +3920,7 @@ where
               DTS:refId="Package\КПТ\ОТБРС\Загрузка матрицы"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{7403143E-2396-40FD-A101-A40319485A4E}"
+              DTS:DTSID="{A54654AC-D49C-4378-841E-23853CE36E2F}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка матрицы">
@@ -3930,18 +3930,18 @@ where
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка матрицы\s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{36E29BBF-F932-4A39-BFA9-43A62EEB4775}"
+                  DTS:DTSID="{6F75F8D5-EFAA-411A-A5AC-F331740E6F9C}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table dbo.ОТБРС_Матрица" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -3950,7 +3950,7 @@ where
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{49065FB4-AD5E-42FF-989A-E7D116D96B11}"
+                  DTS:DTSID="{9D2BA208-D0FF-4802-8711-0F1607745F05}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка матрицы из ОТБРС (отбор по дате)"
@@ -4498,7 +4498,7 @@ where
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка матрицы.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{2E762BD1-940A-4755-A788-9515C8D4B48B}"
+                  DTS:DTSID="{7E2A2F8B-4B7C-44BD-AE37-6F594B8C4A17}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка матрицы\s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -4509,7 +4509,7 @@ where
               DTS:refId="Package\КПТ\ОТБРС\Загрузка МК"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{B3A5F236-A7C1-4BDC-BAE1-66C9B1195816}"
+              DTS:DTSID="{CFEE2DFC-1DC9-4B9C-A5DF-D37D70EADA22}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка МК">
@@ -4519,7 +4519,7 @@ where
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка МК\Загрузка маркетингового классификатора из ОТБРС"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{B823D71D-B9E8-4144-8C8F-54BD4BEB54DA}"
+                  DTS:DTSID="{82667A49-9D0E-4E8F-B05C-17F49ADBBFCC}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка маркетингового классификатора из ОТБРС"
@@ -4805,7 +4805,7 @@ FROM         SC5650 (nolock)</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка МК\Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{E0658584-F23E-4717-83F8-2859C86881CD}"
+                  DTS:DTSID="{6D850318-F03B-40AD-91B2-57BE53763624}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
@@ -4816,7 +4816,7 @@ FROM         SC5650 (nolock)</property>
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table [dbo].[МаркетинговыйКлассификатор];&#xA;insert into МаркетинговыйКлассификатор(id, Код, Наименование)&#xA; values('      999', '    0', 'Не заполнено')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -4826,7 +4826,7 @@ FROM         SC5650 (nolock)</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка МК.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{007C53C1-779C-42C9-9032-4B097C2C9FF1}"
+                  DTS:DTSID="{639A872D-40F0-48CA-94DE-49DE35E599FD}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка МК\Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -4837,7 +4837,7 @@ FROM         SC5650 (nolock)</property>
               DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{AD4BF7D5-C455-4A24-B810-E229D3D9CD2D}"
+              DTS:DTSID="{DC3D9221-FA92-4B5C-A80C-5B614B4FFD97}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка остатков">
@@ -4847,7 +4847,7 @@ FROM         SC5650 (nolock)</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков\Загрузка остатков первый сорт"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Задача потока данных"
-                  DTS:DTSID="{9A18D71F-2231-4039-B4DA-E0EC45CE9E92}"
+                  DTS:DTSID="{5E1A3665-16AE-4EFF-B6F9-3E28B14C43B7}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка остатков первый сорт"
@@ -5191,7 +5191,7 @@ having SUM(ost.ОстатокНаНачалоШТ)&gt;0</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков\Остатки DWH (ОТБОР ПО ДАТЕ)"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{FA356514-3C41-49E4-9721-78686776FC05}"
+                  DTS:DTSID="{99214E20-392F-42C2-A2E4-FB78A53B58D6}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Остатки DWH (ОТБОР ПО ДАТЕ)"
@@ -5642,7 +5642,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков\Очистка таблицы остатков"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{65234713-CEB5-47E8-9DA0-3C36F6736204}"
+                  DTS:DTSID="{0FB78B50-D385-411D-A10A-D10C1631FEB3}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы остатков"
@@ -5653,7 +5653,7 @@ group by Дата, Код_магазина,Код_товара</property>
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table ОТБРС_Остатки;&#xA;&#xA;truncate table ОТБРС_Остатки_уценка;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -5663,7 +5663,7 @@ group by Дата, Код_магазина,Код_товара</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{29C59249-1EDB-4EF7-974E-2AE955FB0599}"
+                  DTS:DTSID="{96067E7D-6BB9-4782-9DC4-F75D60F7FBD1}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка остатков\Очистка таблицы остатков"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -5671,7 +5671,7 @@ group by Дата, Код_магазина,Код_товара</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка остатков.PrecedenceConstraints[Ограничение]"
                   DTS:CreationName=""
-                  DTS:DTSID="{08F6B11A-A0C0-4B4E-8661-7D158590201D}"
+                  DTS:DTSID="{C1530DBC-CB85-4E2C-A3F6-DCCD06AC841D}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка остатков\Остатки DWH (ОТБОР ПО ДАТЕ)"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Ограничение"
@@ -5682,7 +5682,7 @@ group by Дата, Код_магазина,Код_товара</property>
               DTS:refId="Package\КПТ\ОТБРС\Загрузка товаров"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{E276AB19-7DB2-45DC-8E94-915752B9B81A}"
+              DTS:DTSID="{B9B0C926-DDB6-424C-B17A-577B6F2AE98C}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка товаров">
@@ -5692,7 +5692,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка товаров\s8-oalp-test Очистка таблицы Товары"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{4129C724-5019-4683-90CC-B101229E771A}"
+                  DTS:DTSID="{E4573373-D2B7-4687-BF62-4FD83B3DB85F}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Товары"
@@ -5703,7 +5703,7 @@ group by Дата, Код_магазина,Код_товара</property>
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table [dbo].[Товары]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -5712,7 +5712,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка товаров\Загрузка товаров из ОТБРС"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{9B635F90-1AAF-45D6-A32B-3D91A0E07D43}"
+                  DTS:DTSID="{91543079-D562-4601-BA75-D5A5A3E560F6}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка товаров из ОТБРС"
@@ -6448,7 +6448,7 @@ WHERE Товары.isFolder=1</property>
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Загрузка товаров.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{0F41CABD-D967-4654-8FC6-D88687E0103E}"
+                  DTS:DTSID="{D8DE4F31-A075-4FFC-B743-D114AE355252}"
                   DTS:From="Package\КПТ\ОТБРС\Загрузка товаров\s8-oalp-test Очистка таблицы Товары"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -6459,7 +6459,7 @@ WHERE Товары.isFolder=1</property>
               DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков"
               DTS:CreationName="STOCK:SEQUENCE"
               DTS:Description="Контейнер последовательности"
-              DTS:DTSID="{56A8A7E0-2B6D-437D-A20C-B596C1BD40C5}"
+              DTS:DTSID="{D85567F6-A36B-4ADD-80BA-E6A48F56A266}"
               DTS:ExecutableType="STOCK:SEQUENCE"
               DTS:LocaleID="-1"
               DTS:ObjectName="Звгрузка поставщиков">
@@ -6469,7 +6469,7 @@ WHERE Товары.isFolder=1</property>
                   DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков\s8-oalp-test Очистка таблицы Поставщики_temp_load"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{462738D6-0021-4A6C-B579-9AD732F4A764}"
+                  DTS:DTSID="{2E1D342A-B2CF-472A-8BF7-65822A2A3B79}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Поставщики_temp_load"
@@ -6480,7 +6480,7 @@ WHERE Товары.isFolder=1</property>
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:TimeOut="30"
                       SQLTask:SqlStatementSource="truncate table [dbo].[Поставщики_temp_load]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
@@ -6489,7 +6489,7 @@ WHERE Товары.isFolder=1</property>
                   DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков\Загрузка поставщиков из ОТБРС"
                   DTS:CreationName="Microsoft.Pipeline"
                   DTS:Description="Data Flow Task"
-                  DTS:DTSID="{692B8B57-8969-438E-BFD8-E0AED9CBB892}"
+                  DTS:DTSID="{CDE0C64C-9979-487D-9E5C-C9291A244CC4}"
                   DTS:ExecutableType="Microsoft.Pipeline"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Загрузка поставщиков из ОТБРС"
@@ -6781,7 +6781,7 @@ where
                   DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков\Слияние таблиц поставщики"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
-                  DTS:DTSID="{39C0EAA7-4380-4FC4-8ABA-625C21428E7C}"
+                  DTS:DTSID="{25DCC42A-8E72-4CFA-8815-BE147C6656E1}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц поставщики"
@@ -6792,7 +6792,7 @@ where
                     DTS:FilterKind="0" />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
-                      SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                      SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                       SQLTask:SqlStatementSource="MERGE dbo.Поставщики AS Work&#xA;USING dbo.Поставщики_temp_load AS Temp&#xA;ON (Work.Код = Temp.Код)&#xA;WHEN NOT MATCHED BY TARGET&#xA;    THEN INSERT(Код, Поставщик, ИДПоставщика) VALUES(Temp.Код, Temp.Поставщик, Temp.ИДПоставщика)&#xA;WHEN MATCHED&#xA;    THEN UPDATE SET Work.Код = Temp.Код, Work.Поставщик = Temp.Поставщик, Work.ИДПоставщика = Temp.ИДПоставщика;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
@@ -6801,7 +6801,7 @@ where
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков.PrecedenceConstraints[Constraint]"
                   DTS:CreationName=""
-                  DTS:DTSID="{FB972127-C316-4D31-B163-1E9EB0DECF09}"
+                  DTS:DTSID="{9BF19362-C7BC-451A-8003-76B154CC4148}"
                   DTS:From="Package\КПТ\ОТБРС\Звгрузка поставщиков\s8-oalp-test Очистка таблицы Поставщики_temp_load"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint"
@@ -6809,7 +6809,7 @@ where
                 <DTS:PrecedenceConstraint
                   DTS:refId="Package\КПТ\ОТБРС\Звгрузка поставщиков.PrecedenceConstraints[Constraint 1]"
                   DTS:CreationName=""
-                  DTS:DTSID="{A3FFB085-354A-436E-B850-A2F9044BEC87}"
+                  DTS:DTSID="{7A12AB81-5BFA-4C9B-9CBD-B99ED031A4AE}"
                   DTS:From="Package\КПТ\ОТБРС\Звгрузка поставщиков\Загрузка поставщиков из ОТБРС"
                   DTS:LogicalAnd="True"
                   DTS:ObjectName="Constraint 1"
@@ -6822,7 +6822,7 @@ where
           DTS:refId="Package\КПТ\Формирование итоговой таблицы"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{BE01AD14-E985-4448-83DF-F3D1AB515C49}"
+          DTS:DTSID="{110E7A32-5F61-4C5B-B7CE-17732F6E4880}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="Формирование итоговой таблицы">
@@ -6832,7 +6832,7 @@ where
               DTS:refId="Package\КПТ\Формирование итоговой таблицы\Перенос в свод"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{3D0A1161-0354-4AB1-802A-0B187C4A1AD2}"
+              DTS:DTSID="{7D043D2D-C0AF-4B03-BD6C-08765E0B9647}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Перенос в свод"
@@ -8223,7 +8223,7 @@ where
               DTS:refId="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{DF491F0C-5C89-418F-96BD-8B38151821F1}"
+              DTS:DTSID="{58621F32-1542-45F6-B645-270F602780F0}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Свод_ступень_обработки_1"
@@ -10157,7 +10157,7 @@ WHERE
               DTS:refId="Package\КПТ\Формирование итоговой таблицы\Удалить из свода первый заказ"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{C7E9CCD4-E9D8-4832-B90F-6D62B06781E5}"
+              DTS:DTSID="{2079385A-1ECE-42FC-8C2D-CFDDAB917C9F}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Удалить из свода первый заказ"
@@ -10168,7 +10168,7 @@ WHERE
                 DTS:FilterKind="0" />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                  SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                   SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад is null &#xA;and  Дата between @dateN and @date&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=dateadd(d,-7,@date) and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;);&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад in (1,4,5,7,8,9,10,0) -- выполняется&#xA;and  Дата between @dateN and @date -- выполняется&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=(Select top (1) tm.Дата from   dwh.td.t_fact_Товарная_матрица as tm where tm.Код_товара=tbl.Код_товара and tm.Код_магазина=tbl.Код_магазина and tm.Дата&lt;=s.Дата&#xA;order by tm.Дата desc ) &#xA;&#xA;and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;) ;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;where  Дата between @dateN and @date&#xA; and &#xA; exists (select * from &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA;&#xA; where  Дата between @dateN and @date&#xA; and &#xA;  (&#xA;select  top 1 tm1.Признак &#xA;   from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  and tm1.Дата&lt;=@dateN&#xA;  &#xA;order by Дата desc) in (1,5,7,8,10,0)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );&#xA;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;&#xA;where Дата between @dateN and @date&#xA;and &#xA;exists&#xA;(select * from &#xA; &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA; &#xA;where  Дата between @dateN and @date&#xA; and exists(&#xA;select   Код_магазина,Код_товара,count(*)  &#xA;  from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  group by Код_магазина,Код_товара&#xA;&#xA;  having count(*)=1)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
@@ -10176,7 +10176,7 @@ WHERE
               DTS:refId="Package\КПТ\Формирование итоговой таблицы\Удалить свод за период"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{B773492F-1C6D-4D8A-B723-6FCDF38D07E4}"
+              DTS:DTSID="{E61F4519-1B4A-4603-A43B-24BEAAD9439B}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Удалить свод за период"
@@ -10187,7 +10187,7 @@ WHERE
                 DTS:FilterKind="0" />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                  SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                   SQLTask:SqlStatementSource="truncate table Свод_ступень_обработки_1;&#xA;set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;Свод&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
@@ -10196,7 +10196,7 @@ WHERE
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\Формирование итоговой таблицы.PrecedenceConstraints[Ограничение]"
               DTS:CreationName=""
-              DTS:DTSID="{3C4DE151-97B5-4A94-A643-84EE30580EC0}"
+              DTS:DTSID="{55FB6A0C-C353-4ED5-BDC1-47DF85A273F8}"
               DTS:From="Package\КПТ\Формирование итоговой таблицы\Перенос в свод"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Ограничение"
@@ -10204,7 +10204,7 @@ WHERE
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\Формирование итоговой таблицы.PrecedenceConstraints[Ограничение 1]"
               DTS:CreationName=""
-              DTS:DTSID="{4D21739D-4A77-4AAE-B2A1-0A3C27153D62}"
+              DTS:DTSID="{04FEA7B6-DD81-4C4C-A80F-54FF3745C7CF}"
               DTS:From="Package\КПТ\Формирование итоговой таблицы\Удалить свод за период"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Ограничение 1"
@@ -10212,7 +10212,7 @@ WHERE
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ\Формирование итоговой таблицы.PrecedenceConstraints[Ограничение 2]"
               DTS:CreationName=""
-              DTS:DTSID="{2DAB1B74-2E43-41F2-843C-ACE427E609BE}"
+              DTS:DTSID="{90BE08B7-A548-4FEE-BA77-4D475908DF79}"
               DTS:From="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Ограничение 2"
@@ -10224,7 +10224,7 @@ WHERE
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ.PrecedenceConstraints[Ограничение]"
           DTS:CreationName=""
-          DTS:DTSID="{A8B7AE40-A32D-406D-B65B-8DF805A1FE2E}"
+          DTS:DTSID="{7CA3C3BD-2E7D-45E4-AF1E-FA29CB4B7039}"
           DTS:From="Package\КПТ\ОТБРС"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Ограничение"
@@ -10232,7 +10232,7 @@ WHERE
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ.PrecedenceConstraints[Ограничение 1]"
           DTS:CreationName=""
-          DTS:DTSID="{E733F1D3-A163-468A-B504-A8FE2DB39B4F}"
+          DTS:DTSID="{383A314B-0F32-48B4-9CC8-4A32B1E27DA1}"
           DTS:From="Package\КПТ\RSC"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Ограничение 1"
@@ -10240,7 +10240,7 @@ WHERE
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ.PrecedenceConstraints[Ограничение 2]"
           DTS:CreationName=""
-          DTS:DTSID="{C258CFF6-F467-442A-9BF4-F2E444ABB7DE}"
+          DTS:DTSID="{4ACB4F02-0EAD-41AE-B8A0-EF524D1C7531}"
           DTS:From="Package\КПТ\DWH Продажи"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Ограничение 2"
@@ -10251,7 +10251,7 @@ WHERE
       DTS:refId="Package\КПТ по причинам (определение причин)"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Контейнер последовательности"
-      DTS:DTSID="{5DB53AB1-4A06-4589-96EE-2272213091CA}"
+      DTS:DTSID="{23B88641-7587-4B45-84CC-5B0581E3727A}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="КПТ по причинам (определение причин)">
@@ -10261,7 +10261,7 @@ WHERE
           DTS:refId="Package\КПТ по причинам (определение причин)\Заполнение карты причин падения КПТ"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{BB4E54D1-B51F-483F-9C3C-9ACC91863872}"
+          DTS:DTSID="{DDE20390-46CD-4F90-A8C1-4C06DD0D6F64}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Заполнение карты причин падения КПТ"
@@ -10674,7 +10674,7 @@ Left JOIN Свод_временный3 Свод (nolock) ON Свод.Дата = 
           DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{A14F2E96-AF41-4121-837F-E3029004E2A8}"
+          DTS:DTSID="{773E5DEE-2BA0-459F-B36A-FA4DC328FFBE}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин">
@@ -10684,7 +10684,7 @@ Left JOIN Свод_временный3 Свод (nolock) ON Свод.Дата = 
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Заполнение таблицы Увеличение среднедневных продаж"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{E489D6A0-95F1-4867-8744-C1917EF7E9E2}"
+              DTS:DTSID="{11C2AA9D-D9D3-426A-87EA-D9FDD739B6DE}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Заполнение таблицы Увеличение среднедневных продаж"
@@ -11107,7 +11107,7 @@ Left JOIN Свод_временный3 Свод (nolock) ON Свод.Дата = 
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Первый заказ"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Задача потока данных"
-              DTS:DTSID="{809300FE-D949-47EC-87DA-F2ECD8F35D66}"
+              DTS:DTSID="{B36BA93E-AE43-448F-A1CE-8F23E3984846}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Первый заказ"
@@ -11515,7 +11515,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 1 Потери"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{4F28B74E-4DCE-4BAD-B213-F5DF796D89D0}"
+              DTS:DTSID="{69315E1B-CCDC-4E02-A7EE-5ED8E3A81AC1}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 1 Потери"
@@ -12152,7 +12152,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 10 Переоценка, Уценка ТСД"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{6B65FF26-40A1-4DC9-BF90-73947F7A0D72}"
+              DTS:DTSID="{5A41AF06-AB59-418B-B852-9E806655CCD9}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 10 Переоценка, Уценка ТСД"
@@ -12633,7 +12633,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 2 Приказы"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{00194370-6CC9-4C7C-B035-BA9D813AA718}"
+              DTS:DTSID="{EDB684C1-4F36-4259-90A3-029963EB8553}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 2 Приказы"
@@ -13049,7 +13049,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{39C0272C-9E09-4E80-BF24-F2DABC870F8A}"
+              DTS:DTSID="{6261C0C3-2CCB-43B4-A018-ACE5E3F0B80E}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 3 График заказа"
@@ -13511,7 +13511,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 4 недопоставки"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{F01BD0C7-B6C0-4CA2-A447-7BB71CBA6D51}"
+              DTS:DTSID="{60E3231C-59FA-4767-9755-B28044793428}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 4 недопоставки"
@@ -14026,7 +14026,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{CE3E18C9-F991-4CE1-AEE3-08FE7C5FD0E2}"
+              DTS:DTSID="{485AC2B9-9CC2-4C90-8976-1A538207388F}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 5 Причины заказа"
@@ -14512,7 +14512,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{BF6605A3-0BFB-4484-BA95-E69AA46E29AD}"
+              DTS:DTSID="{73C9D063-6C0F-4CCC-AAC1-CF943ED7C13D}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 6 Остатки списания прочие потери"
@@ -14979,7 +14979,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 7 Увеличение продаж"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{DBD4608C-E098-4CCC-985A-71B529C8B86F}"
+              DTS:DTSID="{41CA253C-AF6F-4B87-8991-ADA331A3A8F3}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 7 Увеличение продаж"
@@ -15395,7 +15395,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 8 Стоп отгрузка"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{A36D0B7C-B819-426D-B6E7-073F2B9956FC}"
+              DTS:DTSID="{FA30E1B7-5A75-4651-809A-B5560788E969}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 8 Стоп отгрузка"
@@ -15814,7 +15814,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 9 Квант-Отгрузки"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{ABBA86E0-3DEC-4FF1-AF4E-C996C6947A56}"
+              DTS:DTSID="{9003CBAC-F58F-49F3-804B-74BE00B71B2C}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Определение причин Этап 2 9 Квант-Отгрузки"
@@ -16233,7 +16233,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин\Очистка таблицы Увеличение средневных продаж"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:DTSID="{9F7430A3-AEAE-454F-9757-E8E5DB51631C}"
+              DTS:DTSID="{3FC84E16-EEF7-413E-95E1-9DEA05324082}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблицы Увеличение средневных продаж"
@@ -16244,7 +16244,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                 DTS:FilterKind="0" />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
-                  SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+                  SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
                   SQLTask:SqlStatementSource="truncate table УвеличениеСреднедневныхПродаж" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
@@ -16253,7 +16253,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
-              DTS:DTSID="{638ABB3D-245B-475B-A359-1F11FB8BA475}"
+              DTS:DTSID="{57AFAF70-01A2-457B-8307-882A871BF982}"
               DTS:From="Package\КПТ по причинам (определение причин)\Определение причин\Очистка таблицы Увеличение средневных продаж"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
@@ -16261,7 +16261,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин.PrecedenceConstraints[Constraint 1]"
               DTS:CreationName=""
-              DTS:DTSID="{1B43839A-01EE-4A9C-B232-C5CD8FCBE41F}"
+              DTS:DTSID="{F35495BA-C690-4D43-B012-7F188E598B72}"
               DTS:From="Package\КПТ по причинам (определение причин)\Определение причин\Заполнение таблицы Увеличение среднедневных продаж"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 1"
@@ -16272,7 +16272,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
           DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{A7D0F0AF-FF45-4642-956F-F6295CD30809}"
+          DTS:DTSID="{67F9B8DA-E88C-4D4A-8C11-4D1FF4ED6069}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин Этап 1 (ОТБОР ПО ДАТЕ)"
@@ -16707,7 +16707,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин Этап 3 Приоритеты причин"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{BF88A851-1614-4280-A024-BDBCFA03A8D5}"
+          DTS:DTSID="{684B9E7B-C135-484B-9469-A0C427118409}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин Этап 3 Приоритеты причин"
@@ -16718,7 +16718,7 @@ and КодПоставщика &lt;&gt; 8793
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="&#x9;SET NOCOUNT ON;&#xA;    --Удаление лишних причины &quot;Сводные потери&quot; (код 10) в таблице Свод_временный2&#xA;&#x9;delete from Свод_временный2&#xA;&#x9;where  КодПричиныПаденияКПТ=10&#xA;&#x9;&#x9;and ДатаТоварМагазинПоставщик IN (select T.ДатаТоварМагазинПоставщик &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;from Свод_временный2 as T  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where T.КодПричиныПаденияКПТ&gt;0 and T.КодПричиныПаденияКПТ&lt;&gt;10 )&#xA;&#x9;&#xA;&#x9;--Удалить причину &quot;Проверить заказ&quot; (12) если есть причина &quot;Не заказывать&quot; (13)&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;delete from Свод_временный2&#xA;&#x9;where  КодПричиныПаденияКПТ=12 and ДатаТоварМагазинПоставщик IN (select T.ДатаТоварМагазинПоставщик &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;from Свод_временный2 as T  &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;where T.КодПричиныПаденияКПТ=13)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;--Установка приоритетов&#xA;&#x9;update [Свод_временный2]&#xA;&#x9;Set [Приоритет] = (select TOP 1 Виды.Приоритет from dbo.ВидыПричинПаденияКПТ Виды where Виды.Code=[Свод_временный2].КодПричиныПаденияКПТ)&#xA;&#xA;&#x9;--Заполнение таблицы максимальных приоритетов&#xA;&#x9;truncate table Свод_временный_приоритеты&#xA;    insert Свод_временный_приоритеты&#xA;&#x9;  (&#xA;&#x9;&#x9;&#x9;[Дата]&#xA;&#x9;&#x9;  ,[КодТовара]&#xA;&#x9;&#x9;  ,[КодПоставщика]&#xA;&#x9;&#x9;  ,[КодМагазина]&#xA;&#x9;&#x9;  ,[КодПричиныПаденияКПТ]&#xA;&#x9;&#x9;  ,[КПТаутстоков]&#xA;&#x9;&#x9;  ,[ДатаТоварМагазинПоставщик]&#xA;&#x9;&#x9;  ,[Приоритет]&#xA;&#x9;&#x9;  ,[ПриоритетМаксимальный]&#xA;&#x9;  )&#xA;&#x9;  select &#xA;&#x9;&#x9;&#x9;T1.[Дата]&#xA;&#x9;&#x9;  ,T1.[КодТовара]&#xA;&#x9;&#x9;  ,T1.[КодПоставщика]&#xA;&#x9;&#x9;  ,T1.[КодМагазина]&#xA;&#x9;&#x9;  ,T1.[КодПричиныПаденияКПТ]&#xA;&#x9;&#x9;  ,T1.[КПТаутстоков]&#xA;&#x9;&#x9;  ,T1.[ДатаТоварМагазинПоставщик]&#xA;&#x9;&#x9;  ,T1.[Приоритет]&#xA;&#x9;&#x9;  ,(select MAX(isnull(T2.Приоритет,0)) from Свод_временный2 T2 where T2.ДатаТоварМагазинПоставщик = T1.ДатаТоварМагазинПоставщик)&#xA;&#x9; from Свод_временный2 T1&#xA;&#x9; &#xA;&#x9;--удаление причин с меньшим приоритетом&#x9; &#xA;   delete FROM [KPT].[dbo].[Свод_временный_приоритеты]&#xA;   where [КодПричиныПаденияКПТ]&lt;&gt;0 and [Приоритет]&lt;[ПриоритетМаксимальный]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -16726,7 +16726,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Определение причин Этап 4 Распределение КПТ"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{E82A2B71-43B5-4AC4-BB78-2CB06D0B8C12}"
+          DTS:DTSID="{E38686AD-8E82-4FD7-BE67-9E8E55DE9610}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин Этап 4 Распределение КПТ"
@@ -17113,7 +17113,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод временный 3"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{99659022-0539-4B21-9615-FA0F24196774}"
+          DTS:DTSID="{A67D65CC-559D-46F1-B331-0504E4B965D5}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод временный 3"
@@ -17124,7 +17124,7 @@ and КодПоставщика &lt;&gt; 8793
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="truncate table Свод_временный3" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -17132,7 +17132,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод_Временный1"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{B1F6349A-1668-43DC-B89C-55409E68173D}"
+          DTS:DTSID="{CF2C25AF-FA10-486E-AE8D-3DD5212EB731}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_Временный1"
@@ -17143,7 +17143,7 @@ and КодПоставщика &lt;&gt; 8793
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="truncate table Свод_временный1" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -17151,7 +17151,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод_временный2"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{F8A9B432-0A25-4CBE-934A-3FEC764E25AD}"
+          DTS:DTSID="{EC435B36-A4E5-4837-ADC1-D1CEEFA31D58}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_временный2"
@@ -17162,7 +17162,7 @@ and КодПоставщика &lt;&gt; 8793
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="truncate table Свод_временный2" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -17170,7 +17170,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (определение причин)\Удалить строки из карты причин падения КПТ (ОТБОР ПО ДАТЕ)"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{5A2DCE83-7943-47B1-A27A-9DE3D0B2CA42}"
+          DTS:DTSID="{565D7A26-1760-465D-925E-E8B9CEE05399}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Удалить строки из карты причин падения КПТ (ОТБОР ПО ДАТЕ)"
@@ -17181,7 +17181,7 @@ and КодПоставщика &lt;&gt; 8793
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="--ОЧИСТКА ПЕРИОДА&#xA;set datefirst 7&#xA;&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete from КартаПричинПаденияКПТ where Дата between @dateN  and @date" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -17190,7 +17190,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{C8F69721-B1A8-4633-8B7A-6D88D83A84E1}"
+          DTS:DTSID="{20E3D296-2E15-49EB-B9A2-BE16145201DB}"
           DTS:From="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод_Временный1"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -17198,7 +17198,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{0687346B-E949-45AB-B25C-373E5A2ED50E}"
+          DTS:DTSID="{BD2B6F66-B688-4A22-B04C-2AE864669BC7}"
           DTS:From="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод_Временный1"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -17206,7 +17206,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{52E33B8A-A3A3-4432-BF9C-C419B2B39901}"
+          DTS:DTSID="{9587D605-454C-418F-9690-842AA1529B96}"
           DTS:From="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
@@ -17214,7 +17214,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
-          DTS:DTSID="{E587B51E-BF10-426A-A495-5FC006F85D9C}"
+          DTS:DTSID="{37E38BD6-A1E2-47CE-94B5-E6CEE5B42D8C}"
           DTS:From="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод_временный2"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
@@ -17222,7 +17222,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 4]"
           DTS:CreationName=""
-          DTS:DTSID="{36611E37-0632-45F1-9912-785623C16A7A}"
+          DTS:DTSID="{9E4BB227-D344-4948-AEE5-3FAF9153E68E}"
           DTS:From="Package\КПТ по причинам (определение причин)\Определение причин"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 4"
@@ -17230,7 +17230,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 5]"
           DTS:CreationName=""
-          DTS:DTSID="{1BF18959-EDDD-425C-9837-A9A06058B1A5}"
+          DTS:DTSID="{CBA50BC8-D361-4EA1-BEDC-E86A2B7AA03E}"
           DTS:From="Package\КПТ по причинам (определение причин)\Очистка таблицы Свод временный 3"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 5"
@@ -17238,7 +17238,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 6]"
           DTS:CreationName=""
-          DTS:DTSID="{55C372D8-5216-4144-9850-22AE9D444508}"
+          DTS:DTSID="{F01969D3-099E-4540-B5DC-30673A267128}"
           DTS:From="Package\КПТ по причинам (определение причин)\Определение причин Этап 3 Приоритеты причин"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 6"
@@ -17246,7 +17246,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 7]"
           DTS:CreationName=""
-          DTS:DTSID="{647B155B-2287-4EBD-9A1B-30A69EBFB471}"
+          DTS:DTSID="{895FF248-8C52-4E66-965B-9882E5CDA093}"
           DTS:From="Package\КПТ по причинам (определение причин)\Определение причин Этап 4 Распределение КПТ"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 7"
@@ -17254,7 +17254,7 @@ and КодПоставщика &lt;&gt; 8793
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 8]"
           DTS:CreationName=""
-          DTS:DTSID="{36486959-EA7E-4D49-B812-8E71657E7CD6}"
+          DTS:DTSID="{F60A0C6B-0004-4867-974E-952D7BFE45CD}"
           DTS:From="Package\КПТ по причинам (определение причин)\Удалить строки из карты причин падения КПТ (ОТБОР ПО ДАТЕ)"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 8"
@@ -17265,7 +17265,7 @@ and КодПоставщика &lt;&gt; 8793
       DTS:refId="Package\КПТ по причинам (сбор данных)"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Контейнер последовательности"
-      DTS:DTSID="{E58E07A7-5931-4458-80F5-370CFA6EE9F1}"
+      DTS:DTSID="{AD01DC16-C717-4E91-90DE-DFB31A10E8B0}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="КПТ по причинам (сбор данных)">
@@ -17275,7 +17275,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:refId="Package\КПТ по причинам (сбор данных)\RSC"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{D9CB8FE2-38CB-4449-B43D-65C9C7D28E80}"
+          DTS:DTSID="{E049948E-55D3-4FC1-AE5D-CF0C1AC9B0C4}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="RSC">
@@ -17285,7 +17285,7 @@ and КодПоставщика &lt;&gt; 8793
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC\Загрузка расхождений по заказу СТ из РСЦ (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{227BDC3A-E151-4422-B370-195792C3E8C2}"
+              DTS:DTSID="{130DFAEB-53CA-4E01-B162-61FC26755C56}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка расхождений по заказу СТ из РСЦ (ОТБОР ПО ДАТЕ)"
@@ -17877,7 +17877,7 @@ or Количество_факт is null)</property>
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC\Загрузка расхождений с Прайд из RSC (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{70508C65-6875-48A3-B112-3BC0FBBDFAFF}"
+              DTS:DTSID="{9623762E-A174-4460-AB46-88B9BFA1D864}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка расхождений с Прайд из RSC (ОТБОР ПО ДАТЕ)"
@@ -18392,7 +18392,7 @@ WHERE        Дата_заявки_СТ BETWEEN @dateN AND @date AND tbl.Код_
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC\Загрузка регистра сведений &quot;ДопустимаяПогрешностьКоличестваТовара&quot;"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{772E26BC-2F11-447A-8A94-1547B96161A5}"
+              DTS:DTSID="{0040524E-67F3-40F0-8008-13F41944790A}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка регистра сведений &quot;ДопустимаяПогрешностьКоличестваТовара&quot;"
@@ -18798,7 +18798,7 @@ inner join  _Reference2948 спрГруппыОТБРС (nolock) ON спрГру
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC\Заполнение таблицы - RSC_РасхожденияСПрайдом_Свернуто"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{DB5CAE9E-4D21-43D8-857B-6FFC033CD84D}"
+              DTS:DTSID="{B8E1ED29-FE49-4EE7-BB56-8C0CAD3C050C}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Заполнение таблицы - RSC_РасхожденияСПрайдом_Свернуто"
@@ -19307,7 +19307,7 @@ GROUP BY
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
-              DTS:DTSID="{A10306FF-5A14-49DF-B71D-7F8C0D38318E}"
+              DTS:DTSID="{5306E747-3FD5-4662-ABCB-EE45C2225718}"
               DTS:From="Package\КПТ по причинам (сбор данных)\RSC\Загрузка расхождений по заказу СТ из РСЦ (ОТБОР ПО ДАТЕ)"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
@@ -19315,7 +19315,7 @@ GROUP BY
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC.PrecedenceConstraints[Constraint 1]"
               DTS:CreationName=""
-              DTS:DTSID="{1E239019-C237-446F-8080-492E0EF268B0}"
+              DTS:DTSID="{141C6B36-3D2E-4689-A669-2B7FE78C3D0E}"
               DTS:From="Package\КПТ по причинам (сбор данных)\RSC\Загрузка расхождений с Прайд из RSC (ОТБОР ПО ДАТЕ)"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 1"
@@ -19323,7 +19323,7 @@ GROUP BY
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (сбор данных)\RSC.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
-              DTS:DTSID="{B96E5120-BC57-4A69-9321-C5F3F900C4AC}"
+              DTS:DTSID="{30E2D1C2-8743-4D8C-9921-562C13F44BD6}"
               DTS:From="Package\КПТ по причинам (сбор данных)\RSC\Загрузка регистра сведений &quot;ДопустимаяПогрешностьКоличестваТовара&quot;"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
@@ -19334,7 +19334,7 @@ GROUP BY
           DTS:refId="Package\КПТ по причинам (сбор данных)\Заполнение таблицы ПричиныПаденияКПТ (ОТБОР ПО ДАТЕ)"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{94BFA3C6-0F1A-45A8-8737-AAE32060A57B}"
+          DTS:DTSID="{A9000D1B-14A7-434A-86B9-23AAFEE43590}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Заполнение таблицы ПричиныПаденияКПТ (ОТБОР ПО ДАТЕ)"
@@ -19780,7 +19780,7 @@ Left join ОТБРС_ГрафикЗаказаКратко График ON Гра
           DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Контейнер последовательности"
-          DTS:DTSID="{9CB8B34B-95D6-43FA-A5C5-50B44ED92CD0}"
+          DTS:DTSID="{6F623D4E-B8D6-4C3F-A27F-02073366DA0F}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
           DTS:ObjectName="ОТБРС">
@@ -19790,7 +19790,7 @@ Left join ОТБРС_ГрафикЗаказаКратко График ON Гра
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка Графика заказа из ОТБРС"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{32AF0625-4D51-4578-8704-E4AA94F0A524}"
+              DTS:DTSID="{0B6FBC5A-9AA7-4098-93B2-955BB951A73C}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка Графика заказа из ОТБРС"
@@ -20237,7 +20237,7 @@ WHERE
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка корректировок заказа (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{483BABAA-1B4E-427E-8406-B4B72D22EC88}"
+              DTS:DTSID="{C94DC4DC-E5FC-4951-A5B7-FDDDE548FD58}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка корректировок заказа (ОТБОР ПО ДАТЕ)"
@@ -20622,7 +20622,7 @@ WHERE [DateCorr]  between @dateN and @date and correct&lt;zakaz</property>
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка переоценки из ОТБРС (отбор по дате)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{CD98FF65-9568-42B1-97FC-E1A4BA11B906}"
+              DTS:DTSID="{A90DFC2C-C404-459D-A38F-C81B497AEE38}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка переоценки из ОТБРС (отбор по дате)"
@@ -20973,7 +20973,7 @@ Left Join
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка потерь из ОТБРС (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{D2751BAD-11FF-4517-AAEE-787E0C961CFA}"
+              DTS:DTSID="{5F6E4861-BF64-4F2B-804C-E87A0238E317}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка потерь из ОТБРС (ОТБОР ПО ДАТЕ)"
@@ -21403,7 +21403,7 @@ WHERE
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка приказов из ОТБРС (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{A5F1A05D-D3ED-433C-A00E-6F187A57C092}"
+              DTS:DTSID="{F2E16293-6D85-404D-9EFC-097992F2A796}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка приказов из ОТБРС (ОТБОР ПО ДАТЕ)"
@@ -21879,7 +21879,7 @@ Where
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка списаний из ОТБРС (ОТБОР ПО ДАТЕ)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{D92D84D2-7148-40E0-8D13-791EB7296C27}"
+              DTS:DTSID="{20CD2FF8-F2E3-4BE3-8666-26A4972C79DE}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка списаний из ОТБРС (ОТБОР ПО ДАТЕ)"
@@ -22302,7 +22302,7 @@ LEFT JOIN [sc1705] спрВидыНаценки (NoLock) On спрВидыНац
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка уценки ТСД из ОТБРС (отбор по дате)"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{86DF75C9-140A-41E3-8675-074620DFA3C5}"
+              DTS:DTSID="{02940289-DF22-4270-8500-58056A657B36}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Загрузка уценки ТСД из ОТБРС (отбор по дате)"
@@ -22651,7 +22651,7 @@ Left Join
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС\Заполнение таблицы Нулевые остатки временный&quot;"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
-              DTS:DTSID="{3ADE7958-929B-4D84-B748-A1F0BF276ACD}"
+              DTS:DTSID="{02BAA065-563B-497F-9ABE-46C4467051BF}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
               DTS:ObjectName="Заполнение таблицы Нулевые остатки временный&quot;"
@@ -23077,7 +23077,7 @@ AND дата between @dateN and @date</property>
             <DTS:PrecedenceConstraint
               DTS:refId="Package\КПТ по причинам (сбор данных)\ОТБРС.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
-              DTS:DTSID="{09647C87-1054-46F1-9E80-3926DFEAA308}"
+              DTS:DTSID="{37D5F9C6-7AA4-4D04-9216-08C01F044283}"
               DTS:From="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка списаний из ОТБРС (ОТБОР ПО ДАТЕ)"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
@@ -23088,7 +23088,7 @@ AND дата between @dateN and @date</property>
           DTS:refId="Package\КПТ по причинам (сбор данных)\Очистка таблиц для сбора данных для определения причин"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{BA49B1B8-0470-48A4-B592-7145CC679114}"
+          DTS:DTSID="{39B35460-EB1C-4847-9536-90B05A28BE96}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблиц для сбора данных для определения причин"
@@ -23099,7 +23099,7 @@ AND дата between @dateN and @date</property>
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="truncate table ОТБРС_Потери;&#xA;truncate table ОТБРС_Приказы;&#xA;truncate table ОТБРС_ГрафикЗаказаКратко;&#xA;truncate table RSC_ФактРасхождСПоставщиками;&#xA;truncate table RSC_ЗаказыПоставщикам;&#xA;truncate table RSC_РасхожденияСПрайдом;&#xA;truncate table RSC_РегСвед_ДопустимаяПогрешностьКолВаТовара;&#xA;truncate table RSC_РасхожденияСПрайдом_Свернуто;&#xA;truncate table ОТБРС_КорректировкаЗаказа;&#xA;truncate table ОТБРС_Списания;&#xA;truncate table Нулевые_Остатки_временный;&#xA;&#xA;-- Переоценка, Уценка ТСД (ИЗМ 1768)&#xA;truncate table ФактПереоценки;&#xA;truncate table ФактУценкиТСД;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -23107,7 +23107,7 @@ AND дата between @dateN and @date</property>
           DTS:refId="Package\КПТ по причинам (сбор данных)\Удалить строки из причины падения КПТ"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{CBC5D38C-60E3-42A0-B26C-3FDAB696211C}"
+          DTS:DTSID="{4A274A24-AE1A-43ED-9221-D5D2C7E2470E}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Удалить строки из причины падения КПТ"
@@ -23118,7 +23118,7 @@ AND дата between @dateN and @date</property>
             DTS:FilterKind="0" />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{AC570EA3-B358-444E-98A3-B1E6892DBDFF}"
+              SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
               SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;ПричиныПаденияКПТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -23127,7 +23127,7 @@ AND дата between @dateN and @date</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (сбор данных).PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{0B291ED6-3710-471B-AC97-D660CBEFDD8C}"
+          DTS:DTSID="{C296B494-578C-492B-9B8E-17E898982F8D}"
           DTS:From="Package\КПТ по причинам (сбор данных)\Очистка таблиц для сбора данных для определения причин"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -23135,7 +23135,7 @@ AND дата between @dateN and @date</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (сбор данных).PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{ED0A8B64-5229-4290-8277-241D22B4705A}"
+          DTS:DTSID="{30F3AE64-BCE0-4D57-AE0A-9A3C8F1D9680}"
           DTS:From="Package\КПТ по причинам (сбор данных)\Очистка таблиц для сбора данных для определения причин"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -23143,7 +23143,7 @@ AND дата between @dateN and @date</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (сбор данных).PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{77C6E94A-B312-419F-B642-F213559B9808}"
+          DTS:DTSID="{FFDD4EAB-3E4F-41FD-8C3F-7F2518AD1F81}"
           DTS:From="Package\КПТ по причинам (сбор данных)\RSC"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
@@ -23151,7 +23151,7 @@ AND дата between @dateN and @date</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (сбор данных).PrecedenceConstraints[Constraint 3]"
           DTS:CreationName=""
-          DTS:DTSID="{9560E56F-F251-4509-9C82-FE726779CF87}"
+          DTS:DTSID="{5EFDFC76-4170-4737-B3C2-88F43B641F40}"
           DTS:From="Package\КПТ по причинам (сбор данных)\ОТБРС"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
@@ -23159,7 +23159,7 @@ AND дата between @dateN and @date</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\КПТ по причинам (сбор данных).PrecedenceConstraints[Constraint 4]"
           DTS:CreationName=""
-          DTS:DTSID="{A23629A5-9CA1-41B7-A96C-C9A2E32F564E}"
+          DTS:DTSID="{12BDF0E1-E9EC-4829-99FB-4A1C54AD25B1}"
           DTS:From="Package\КПТ по причинам (сбор данных)\Удалить строки из причины падения КПТ"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 4"
@@ -23170,7 +23170,7 @@ AND дата between @dateN and @date</property>
       DTS:refId="Package\Расчет измерений куба КПТ"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Контейнер последовательности"
-      DTS:DTSID="{19F8FD76-59BD-4295-B77D-C7211FB79254}"
+      DTS:DTSID="{20033CCC-5953-4BE4-AA18-4689E0B32934}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Расчет измерений куба КПТ">
@@ -23180,7 +23180,7 @@ AND дата between @dateN and @date</property>
           DTS:refId="Package\Расчет измерений куба КПТ\Обработка измерений"
           DTS:CreationName="Microsoft.DTSProcessingTask"
           DTS:Description="Задача &quot;Обработка средствами Analysis Services&quot;"
-          DTS:DTSID="{8F3FC187-F8BE-4868-ABE3-437D0FA91C07}"
+          DTS:DTSID="{0E25043E-41A6-4003-8D8D-5E2257483F93}"
           DTS:ExecutableType="Microsoft.DTSProcessingTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Обработка измерений"
@@ -23199,7 +23199,7 @@ AND дата between @dateN and @date</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{C617EF80-9CD8-4F5D-89E3-D79E1B04E9BA}"
+      DTS:DTSID="{63E3F6D2-AA37-4C7B-A477-871790AAE4E3}"
       DTS:From="Package\КПТ по причинам (определение причин)"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -23207,7 +23207,7 @@ AND дата between @dateN and @date</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 26]"
       DTS:CreationName=""
-      DTS:DTSID="{277C8CA4-DB6D-4C13-B10F-5DA30BC6ABC8}"
+      DTS:DTSID="{0E03B596-A131-411B-9951-A82203D068E3}"
       DTS:From="Package\КПТ"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 26"
@@ -23215,7 +23215,7 @@ AND дата between @dateN and @date</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 27]"
       DTS:CreationName=""
-      DTS:DTSID="{F086E7F1-003D-4C50-8FC5-91CFC81D4351}"
+      DTS:DTSID="{E2F1CE53-5533-4555-8A0F-47419C485DF6}"
       DTS:From="Package\КПТ по причинам (сбор данных)"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 27"
@@ -23225,7 +23225,7 @@ AND дата between @dateN and @date</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{7C876FCE-9EDD-4D0A-A9FA-84F282EC3663}"
+      DTS:DTSID="{90CF7C75-B9FE-493D-9600-E6967FD202D7}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -23233,7 +23233,7 @@ AND дата between @dateN and @date</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{E8273AC6-C77F-40DF-8011-6C8E4ADF1C35}"
+          DTS:DTSID="{52122AA5-9916-44F9-89A7-90480D2C4342}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
