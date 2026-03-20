@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36324.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "SSIS-Anix", "SSIS-Anix.dtproj", "{6C1CF0B7-B290-49E8-AFC2-ADF658863B2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C1CF0B7-B290-49E8-AFC2-ADF658863B2F}.Development|Default.ActiveCfg = Development
+		{6C1CF0B7-B290-49E8-AFC2-ADF658863B2F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80218A5E-06A3-4253-A7F4-4729F05AB4EC}
+	EndGlobalSection
+EndGlobal
