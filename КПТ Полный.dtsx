@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ по причинам"
   DTS:PackageType="5"
-  DTS:VersionBuild="329"
-  DTS:VersionGUID="{6707B855-635E-42F7-AC32-823C9104F511}">
+  DTS:VersionBuild="330"
+  DTS:VersionGUID="{139FB4C3-30C8-49D5-B10B-3B0907BBB3ED}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -499,7 +499,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблиц"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:LoggingOptions
                 DTS:FilterKind="0" />
@@ -1785,7 +1785,7 @@ left join
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC_Приход"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="2">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -2874,7 +2874,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC Незаказанный товар по причинам"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="2">
+                  DTS:ThreadHint="1">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3294,7 +3294,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы Статусы не заказывать"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="3">
+                  DTS:ThreadHint="0">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3345,7 +3345,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3886,7 +3886,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц магазины"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3935,7 +3935,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="6">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -4810,7 +4810,7 @@ FROM         SC5650 (nolock)</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="6">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -5647,7 +5647,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы остатков"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="7">
+                  DTS:ThreadHint="8">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -5697,7 +5697,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Товары"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="8">
+                  DTS:ThreadHint="7">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -14070,12 +14070,25 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
 	from Свод_временный1 C3 with (nolock)
 	where 
  		(case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
-		and C3.КодТовара	IN (select TOP 1 ОТБРС_КорректировкаЗаказа.КодТовара from ОТБРС_КорректировкаЗаказа with (nolock)
-					where  ОТБРС_КорректировкаЗаказа.КодТовара = C3.КодТовара
-					AND ОТБРС_КорректировкаЗаказа.КодМагазина = C3.КодМагазина
-					AND ОТБРС_КорректировкаЗаказа.Дата&lt;C3.Дата
-																	order by ОТБРС_КорректировкаЗаказа.Дата desc)
-
+		and C3.КодТовара IN (
+    select TOP 1 OK.КодТовара 
+    from ОТБРС_КорректировкаЗаказа OK with (nolock)
+    where OK.КодТовара = C3.КодТовара
+      AND OK.КодМагазина = C3.КодМагазина
+      AND OK.Дата &lt; C3.Дата
+      AND OK.Дата &gt;= (
+          select top 1 h.Дата_заявки_СТ 
+          from dwh.td.t_fact_Заявка_СТ_шапки h
+          join dwh.td.t_fact_Заявка_СТ_строки s 
+              on s.Составной_код_заявки_СТ = h.Составной_код_заявки_СТ
+          where h.Дата_заявки_СТ &gt;= dateadd(d, -14, C3.Дата)
+            and h.Дата_заявки_СТ &lt;= C3.Дата
+            and C3.КодТовара = s.Код_товара
+            and C3.КодМагазина = h.Код_магазина
+          order by h.Дата_заявки_СТ desc
+      )
+    order by OK.Дата desc
+)
 	Union all
 	-- ПРОВЕРИТЬ ЗАКАЗ
 	select
@@ -14182,7 +14195,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[Дата]"
                               dataType="dbDate"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[Дата]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[Дата]"
@@ -14191,7 +14204,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодТовара]"
                               dataType="i8"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[КодТовара]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодТовара]"
@@ -14200,7 +14213,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодПоставщика]"
                               dataType="i8"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[КодПоставщика]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодПоставщика]"
@@ -14209,7 +14222,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодМагазина]"
                               dataType="i8"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[КодМагазина]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодМагазина]"
@@ -14218,7 +14231,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КПТаутстоков]"
                               dataType="i4"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[КПТаутстоков]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КПТаутстоков]"
@@ -14227,7 +14240,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодПричиныПаденияКПТ]"
                               dataType="ui1"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[КодПричиныПаденияКПТ]"
                               lineageId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[КодПричиныПаденияКПТ]"
@@ -14236,7 +14249,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                             <outputColumn
                               refId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].Columns[ДатаТоварМагазинПоставщик]"
                               dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
+                              errorOrTruncationOperation="Преобразование"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1.Outputs[ADO NET Source Output].ExternalColumns[ДатаТоварМагазинПоставщик]"
                               length="41"
@@ -16238,7 +16251,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблицы Увеличение средневных продаж"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:LoggingOptions
                 DTS:FilterKind="0" />
@@ -16712,7 +16725,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин Этап 3 Приоритеты причин"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17118,7 +17131,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод временный 3"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17156,7 +17169,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_временный2"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -26411,6 +26424,14 @@ AND дата between @dateN and @date</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери">
     <LayoutInfo>
