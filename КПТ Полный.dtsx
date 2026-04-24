@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ по причинам"
   DTS:PackageType="5"
-  DTS:VersionBuild="330"
-  DTS:VersionGUID="{139FB4C3-30C8-49D5-B10B-3B0907BBB3ED}">
+  DTS:VersionBuild="347"
+  DTS:VersionGUID="{C08A281C-B355-48F3-9FC4-4E14EB11F4B1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,12 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=S12-1C-RSC;Initial Catalog=RSC;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-KTP-{A8A37771-7EAD-4A9A-B00E-A72D7DE99C5F}RSC;" />
+          DTS:ConnectionString="Data Source=S12-1C-RSC;User ID=rsc-sql-reader;Initial Catalog=RSC;Provider=SQLOLEDB.1;Application Name=SSIS-KTP-{A8A37771-7EAD-4A9A-B00E-A72D7DE99C5F}RSC;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADGMexW7lHyQ6gY42malgXeAAAAAASAAACgAAAAEAAAAJb2wtdDdULSdE3aEMaTEesYAAAAt6o+aoiFV+xwLgBA4JQgzHT/unW6d+9hFAAAADZ94KgGfh7LfQVOayBgrZPfPT5f</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -113,7 +118,12 @@
       DTS:ObjectName="S19-RDSAPP-RSC.rsc.rsc-sql-reader ADO .net">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader&quot;;" />
+          DTS:ConnectionString="Data Source=S19-RDSAPP-RSC;User ID=rsc-sql-reader;Initial Catalog=rsc;Persist Security Info=True;Connect Timeout=1200;Application Name=&quot;SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader&quot;;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABXYelcwG17Wu89Rxfll+sKAAAAAASAAACgAAAAEAAAACbRIIgE2uDp0ypzkgLkVoEYAAAASTmJObxnOIogYPi4SQWj8EnLk7GjBUczFAAAAGOGr0XgAlW+jPQ15MyTXNMMcJdZ</DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -499,7 +509,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблиц"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:LoggingOptions
                 DTS:FilterKind="0" />
@@ -1785,7 +1795,7 @@ left join
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC_Приход"
-                  DTS:ThreadHint="2">
+                  DTS:ThreadHint="1">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -2874,7 +2884,7 @@ where  dateadd(yyyy,-2000,   РегистрНТ._Period) between @dateN and @dat
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы RSC Незаказанный товар по причинам"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="2">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3294,7 +3304,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы Статусы не заказывать"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="0">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3345,7 +3355,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3886,7 +3896,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц магазины"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3935,7 +3945,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="6">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -4810,7 +4820,7 @@ FROM         SC5650 (nolock)</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="6">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -5647,7 +5657,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы остатков"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="8">
+                  DTS:ThreadHint="7">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -5697,7 +5707,7 @@ group by Дата, Код_магазина,Код_товара</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Товары"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="7">
+                  DTS:ThreadHint="8">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -12200,6 +12210,8 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
  		
  	union all
  	
+
+ 	
  -- Уценки ТСД
 	select
 		 C3.Дата Дата
@@ -12219,20 +12231,9 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
 		and C3.КодТовара IN (select TOP 1 ТСД .КодТовара from ФактУценкиТСД ТСД with (nolock)
 								where  ТСД .КодТовара = C3.КодТовара
 								AND ТСД .Дата &lt;= C3.Дата
-                                                                                                                                                     and (ТСД.Дата&gt;=(select top 1 Дата_заявки_СТ from dwh.td.t_fact_Заявка_СТ_шапки h
-																join dwh.td.t_fact_Заявка_СТ_строки s on s.Составной_код_заявки_СТ=h.Составной_код_заявки_СТ
-																where h.Дата_заявки_СТ&gt;=dateadd(d,-14,c3.дата) and
-																Дата_заявки_СТ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
-															order by Дата_заявки_СТ desc) or 
-                                                                                                                                                                                                                                                       ТСД.Дата&gt;=(select top 1 [Дата_заявки_РЦ] from dwh.td.t_fact_Заявка_РЦ_шапки h
-																join dwh.td.t_fact_Заявка_РЦ_строки s on s.Составной_код_заявки_РЦ=h.Составной_код_заявки_РЦ
-																where Дата_заявки_РЦ&gt;= dateadd(d,-14,c3.дата) and
-																Дата_заявки_РЦ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
-															order by Дата_заявки_РЦ desc) )
-
-
 								AND ТСД .КодМагазина = C3.КодМагазина
-								)
+								) 
+ 
  	union all---остатки на уценке---
 	select
 		 C3.Дата Дата
@@ -14055,40 +14056,30 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
                           expressionType="Notify"
                           name="SqlCommand"
                           UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">-- КОРРЕКТИРОВКА ЗАКАЗА
-	select
-		 C3.Дата Дата
-		,C3.КодТовара КодТовара
-		,C3.КодПоставщика КодПоставщика
-		,C3.[КодМагазина] [КодМагазина]
-		,0 КПТаутстоков
-		,cast(11 as tinyint) КодПричиныПаденияКПТ
-		,left(LTRIM(RTRIM( convert(varchar, C3.Дата, 112)))+'_'+
-				RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодМагазина as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодПоставщика as CHAR)))
-		,41) ДатаТоварМагазинПоставщик
-	from Свод_временный1 C3 with (nolock)
-	where 
- 		(case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
-		and C3.КодТовара IN (
-    select TOP 1 OK.КодТовара 
-    from ОТБРС_КорректировкаЗаказа OK with (nolock)
-    where OK.КодТовара = C3.КодТовара
-      AND OK.КодМагазина = C3.КодМагазина
-      AND OK.Дата &lt; C3.Дата
-      AND OK.Дата &gt;= (
-          select top 1 h.Дата_заявки_СТ 
-          from dwh.td.t_fact_Заявка_СТ_шапки h
-          join dwh.td.t_fact_Заявка_СТ_строки s 
-              on s.Составной_код_заявки_СТ = h.Составной_код_заявки_СТ
-          where h.Дата_заявки_СТ &gt;= dateadd(d, -14, C3.Дата)
-            and h.Дата_заявки_СТ &lt;= C3.Дата
-            and C3.КодТовара = s.Код_товара
-            and C3.КодМагазина = h.Код_магазина
-          order by h.Дата_заявки_СТ desc
-      )
-    order by OK.Дата desc
-)
+select
+	 C3.Дата Дата
+	,C3.КодТовара КодТовара
+	,C3.КодПоставщика КодПоставщика
+	,C3.[КодМагазина] [КодМагазина]
+	,0 КПТаутстоков
+	,cast(11 as tinyint) КодПричиныПаденияКПТ
+	,left(LTRIM(RTRIM( convert(varchar, C3.Дата, 112)))+'_'+
+			RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
+	LTRIM(RTRIM( CAST(C3.КодМагазина as CHAR)))+'_'+
+	LTRIM(RTRIM( CAST(C3.КодПоставщика as CHAR)))
+	,41) ДатаТоварМагазинПоставщик
+from Свод_временный1 C3 with (nolock)
+where 
+	(case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
+	and C3.КодТовара IN (
+		select OK.КодТовара 
+		from ОТБРС_КорректировкаЗаказа OK with (nolock)
+		where OK.КодТовара = C3.КодТовара
+		  AND OK.КодМагазина = C3.КодМагазина
+		  AND OK.Дата &lt; C3.Дата
+		  AND OK.Дата &gt;= dateadd(day, -14, C3.Дата)  
+	)
+	
 	Union all
 	-- ПРОВЕРИТЬ ЗАКАЗ
 	select
@@ -14738,36 +14729,40 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
 									and (ОТБРС_Остатки.ОстатокНаНачалоШТ &lt; 0 or ОТБРС_Остатки.ОстатокНаНачалоШТ+ОборотШТ &lt; 0)) 	 
 	Union all								
 	-- СПИСАНИЕ
-	select
-		 C3.Дата Дата
-		,C3.КодТовара КодТовара
-		,C3.КодПоставщика КодПоставщика
-		,C3.[КодМагазина] [КодМагазина]
-		,0 КПТаутстоков
-		,cast(15 as tinyint) КодПричиныПаденияКПТ
-		,left(LTRIM(RTRIM( convert(varchar, C3.Дата, 112)))+'_'+
-				RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодМагазина as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодПоставщика as CHAR)))
-		,41) ДатаТоварМагазинПоставщик
-	from Свод_временный1 C3 with (nolock)
-	where 
- 		(case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
-		and C3.КодТовара IN (select top 1 Нулевые_Остатки_временный.КодТовара from Нулевые_Остатки_временный with (nolock)
-								where Нулевые_Остатки_временный.КодТовара = C3.КодТовара
-									and Нулевые_Остатки_временный.КодМагазина = C3.КодМагазина
-									and Нулевые_Остатки_временный.Дата &gt;= C3.Дата and (Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &gt;=(select top 1 Дата_заявки_СТ from dwh.td.t_fact_Заявка_СТ_шапки h
-																join dwh.td.t_fact_Заявка_СТ_строки s on s.Составной_код_заявки_СТ=h.Составной_код_заявки_СТ
-																where h.Дата_заявки_СТ&gt;=dateadd(d,-14,c3.дата) and
-																Дата_заявки_СТ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
-															order by Дата_заявки_СТ desc) or 
-                                                                                                                                                                                                                                                       Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &gt;=(select top 1 [Дата_заявки_РЦ] from dwh.td.t_fact_Заявка_РЦ_шапки h
-																join dwh.td.t_fact_Заявка_РЦ_строки s on s.Составной_код_заявки_РЦ=h.Составной_код_заявки_РЦ
-																where Дата_заявки_РЦ&gt;= dateadd(d,-14,c3.дата) and
-																Дата_заявки_РЦ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
-															order by Дата_заявки_РЦ desc) )
-									and Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &lt; C3.Дата
-									and isnull(Нулевые_Остатки_временный.[КолСписаноПослеПоложительногоОстатка],0) &gt; 0) 
+ select
+   C3.Дата Дата
+  ,C3.КодТовара КодТовара
+  ,C3.КодПоставщика КодПоставщика
+  ,C3.[КодМагазина] [КодМагазина]
+  ,0 КПТаутстоков
+  ,cast(15 as tinyint) КодПричиныПаденияКПТ
+  ,left(LTRIM(RTRIM( convert(varchar, C3.Дата, 112)))+'_'+
+    RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
+  LTRIM(RTRIM( CAST(C3.КодМагазина as CHAR)))+'_'+
+  LTRIM(RTRIM( CAST(C3.КодПоставщика as CHAR)))
+  ,41) ДатаТоварМагазинПоставщик
+ from Свод_временный1 C3 with (nolock)
+ where 
+   (case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
+  and C3.КодТовара IN (select top 1 Нулевые_Остатки_временный.КодТовара from Нулевые_Остатки_временный with (nolock)
+        where Нулевые_Остатки_временный.КодТовара = C3.КодТовара
+         and Нулевые_Остатки_временный.КодМагазина = C3.КодМагазина
+         and Нулевые_Остатки_временный.Дата = C3.Дата and (Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &lt;= isnull((select top 1 Дата_плановой_доставки from dwh.td.t_fact_Заявка_СТ_шапки(nolock) h
+                join dwh.td.t_fact_Заявка_СТ_строки (nolock) s on s.Составной_код_заявки_СТ=h.Составной_код_заявки_СТ
+                where h.Дата_заявки_СТ&gt;=dateadd(d,-14,c3.дата) and
+                Дата_заявки_СТ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
+                and Дата_заявки_СТ&lt;= Нулевые_Остатки_временный.[ДатаПоложительногоОстатка]
+                and Дата_плановой_доставки&gt;=C3.Дата
+               order by Дата_плановой_доставки asc),'20500101')  or 
+                                                                Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &lt;=ISNULL((select top 1 Дата_плановой_доставки from dwh.td.t_fact_Заявка_РЦ_шапки (nolock) h
+                join dwh.td.t_fact_Заявка_РЦ_строки (nolock) s on s.Составной_код_заявки_РЦ=h.Составной_код_заявки_РЦ
+                where Дата_заявки_РЦ&gt;= dateadd(d,-14,c3.дата) and
+                Дата_заявки_РЦ&lt;=C3.Дата and c3.КодТовара=s.Код_товара and c3.КодМагазина=h.Код_магазина
+                and Дата_заявки_РЦ&lt;= Нулевые_Остатки_временный.[ДатаПоложительногоОстатка]
+                and Дата_плановой_доставки&gt;=C3.Дата
+               order by Дата_плановой_доставки asc),'20500101') )
+         and Нулевые_Остатки_временный.[ДатаПоложительногоОстатка] &lt; C3.Дата
+         and isnull(Нулевые_Остатки_временный.[КолСписаноПослеПоложительногоОстатка],0) &gt; 0)
 
 	Union all
 	 -- ПРОЧИЕ ПОТЕРИ
@@ -16251,7 +16246,7 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
               DTS:LocaleID="-1"
               DTS:ObjectName="Очистка таблицы Увеличение средневных продаж"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:LoggingOptions
                 DTS:FilterKind="0" />
@@ -16725,7 +16720,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Определение причин Этап 3 Приоритеты причин"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17131,7 +17126,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод временный 3"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17150,7 +17145,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_Временный1"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17169,7 +17164,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Очистка таблицы Свод_временный2"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -17188,7 +17183,7 @@ and КодПоставщика &lt;&gt; 8793
           DTS:LocaleID="-1"
           DTS:ObjectName="Удалить строки из карты причин падения КПТ (ОТБОР ПО ДАТЕ)"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:LoggingOptions
             DTS:FilterKind="0" />
@@ -24054,7 +24049,7 @@ AND дата between @dateN and @date</property>
         <NodeLayout
           Size="255,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 10 Переоценка, Уценка ТСД"
-          TopLeft="272.083857442346,333.960167714885" />
+          TopLeft="270.893381231596,332.685657893089" />
         <NodeLayout
           Size="257,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 2 Приказы"
@@ -24070,9 +24065,9 @@ AND дата between @dateN and @date</property>
         <NodeLayout
           Size="257,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа"
-          TopLeft="2.04769392033222,221.023012552302" />
+          TopLeft="2.04769392033222,219.748502730506" />
         <NodeLayout
-          Size="257,44"
+          Size="395,42"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери"
           TopLeft="2.04769392033222,276.26090854752" />
         <NodeLayout
@@ -24262,30 +24257,30 @@ AND дата between @dateN and @date</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 3]"
-          TopLeft="164.828616352201,196.329664570231">
+          TopLeft="164.928616352201,196.329664570231">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="138.096436058701,26.721922731356"
+              EndConnector="137.796436058701,26.721922731356"
               Start="0,0"
-              End="138.096436058701,19.221922731356">
+              End="137.796436058701,19.221922731356">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.36096136567801" />
+                    End="0,9.36096136567799" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.36096136567801"
+                    Point1="0,9.36096136567799"
                     Point2="0,13.360961365678"
                     Point3="4,13.360961365678" />
                   <mssgle:LineSegment
-                    End="134.096436058701,13.360961365678" />
+                    End="133.796436058701,13.360961365678" />
                   <mssgle:CubicBezierSegment
-                    Point1="134.096436058701,13.360961365678"
-                    Point2="138.096436058701,13.360961365678"
-                    Point3="138.096436058701,17.360961365678" />
+                    Point1="133.796436058701,13.360961365678"
+                    Point2="137.796436058701,13.360961365678"
+                    Point3="137.796436058701,17.360961365678" />
                   <mssgle:LineSegment
-                    End="138.096436058701,19.221922731356" />
+                    End="137.796436058701,19.221922731356" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24296,30 +24291,30 @@ AND дата between @dateN and @date</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\КПТ по причинам (определение причин).PrecedenceConstraints[Constraint 4]"
-          TopLeft="571.925052410902,473.551587301587">
+          TopLeft="571.525052410902,473.451587301587">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="66.053459119495,-175.161650194668"
+              EndConnector="66.4534591194951,-174.861650194668"
               Start="0,0"
-              End="58.553459119495,-175.161650194668">
+              End="58.9534591194951,-174.861650194668">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="29.0267295597475,0" />
+                    End="29.2267295597475,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="29.0267295597475,0"
-                    Point2="33.0267295597475,0"
-                    Point3="33.0267295597475,-4" />
+                    Point1="29.2267295597475,0"
+                    Point2="33.2267295597475,0"
+                    Point3="33.2267295597475,-4" />
                   <mssgle:LineSegment
-                    End="33.0267295597475,-171.161650194668" />
+                    End="33.2267295597475,-170.861650194668" />
                   <mssgle:CubicBezierSegment
-                    Point1="33.0267295597475,-171.161650194668"
-                    Point2="33.0267295597475,-175.161650194668"
-                    Point3="37.0267295597475,-175.161650194668" />
+                    Point1="33.2267295597475,-170.861650194668"
+                    Point2="33.2267295597475,-174.861650194668"
+                    Point3="37.2267295597475,-174.861650194668" />
                   <mssgle:LineSegment
-                    End="58.553459119495,-175.161650194668" />
+                    End="58.9534591194951,-174.861650194668" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24470,7 +24465,7 @@ AND дата between @dateN and @date</property>
           PanelSize="1061,1005"
           Size="1061,1048"
           Id="Package\КПТ по причинам (определение причин)"
-          TopLeft="3083.64285714286,236.142857142857" />
+          TopLeft="3082.3,135.1" />
         <NodeLayout
           Size="385,42"
           Id="Package\КПТ по причинам (сбор данных)\RSC\Загрузка расхождений по заказу СТ из РСЦ (ОТБОР ПО ДАТЕ)"
@@ -24859,30 +24854,30 @@ AND дата between @dateN and @date</property>
           TopLeft="4176,669" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="4144.64285714286,760.142857142857">
+          TopLeft="4143.1,659.1">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="31.3571428571431,-21.1428571428571"
+              EndConnector="32.8999999999996,79.9"
               Start="0,0"
-              End="23.8571428571431,-21.1428571428571">
+              End="25.3999999999996,79.9">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="11.6785714285716,0" />
+                    End="12.4499999999998,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="11.6785714285716,0"
-                    Point2="15.6785714285716,0"
-                    Point3="15.6785714285716,-4" />
+                    Point1="12.4499999999998,0"
+                    Point2="16.4499999999998,0"
+                    Point3="16.4499999999998,4" />
                   <mssgle:LineSegment
-                    End="15.6785714285716,-17.1428571428571" />
+                    End="16.4499999999998,75.9" />
                   <mssgle:CubicBezierSegment
-                    Point1="15.6785714285716,-17.1428571428571"
-                    Point2="15.6785714285716,-21.1428571428571"
-                    Point3="19.6785714285716,-21.1428571428571" />
+                    Point1="16.4499999999998,75.9"
+                    Point2="16.4499999999998,79.9"
+                    Point3="20.4499999999998,79.9" />
                   <mssgle:LineSegment
-                    End="23.8571428571431,-21.1428571428571" />
+                    End="25.3999999999996,79.9" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -24927,30 +24922,30 @@ AND дата between @dateN and @date</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 27]"
-          TopLeft="2988.25,618.5">
+          TopLeft="2988.45,618.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="95.3928571428601,141.642857142857"
+              EndConnector="93.8500000000004,40.7"
               Start="0,0"
-              End="87.8928571428601,141.642857142857">
+              End="86.3500000000004,40.7">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="43.69642857143,0" />
+                    End="42.9250000000002,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="43.69642857143,0"
-                    Point2="47.69642857143,0"
-                    Point3="47.69642857143,4" />
+                    Point1="42.9250000000002,0"
+                    Point2="46.9250000000002,0"
+                    Point3="46.9250000000002,4" />
                   <mssgle:LineSegment
-                    End="47.69642857143,137.642857142857" />
+                    End="46.9250000000002,36.7" />
                   <mssgle:CubicBezierSegment
-                    Point1="47.69642857143,137.642857142857"
-                    Point2="47.69642857143,141.642857142857"
-                    Point3="51.69642857143,141.642857142857" />
+                    Point1="46.9250000000002,36.7"
+                    Point2="46.9250000000002,40.7"
+                    Point3="50.9250000000002,40.7" />
                   <mssgle:LineSegment
-                    End="87.8928571428601,141.642857142857" />
+                    End="86.3500000000004,40.7" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -25375,11 +25370,11 @@ AND дата between @dateN and @date</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="223,44"
+          Size="223.2,44"
           Id="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)\s8-oalp-test ОТБРС_Матрица"
           TopLeft="50.4433962264151,129.311320754717" />
         <NodeLayout
-          Size="103,42"
+          Size="103.2,41.6"
           Id="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)\DWH"
           TopLeft="6.5,4.5" />
         <EdgeLayout
@@ -25556,7 +25551,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ\ОТБРС\Загрузка остатков\Остатки DWH (ОТБОР ПО ДАТЕ)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="103,42"
           Id="Package\КПТ\ОТБРС\Загрузка остатков\Остатки DWH (ОТБОР ПО ДАТЕ)\DWH"
@@ -25596,7 +25591,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25798,13 +25795,13 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="263,44"
+          Size="263.2,44"
           Id="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1\Преобразование типов"
           TopLeft="5.5,108.330188679245" />
         <NodeLayout
-          Size="302,44"
+          Size="302.4,44"
           Id="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1\Свод_ступень_обработки_1"
           TopLeft="27.4622641509434,219.160377358491" />
         <NodeLayout
@@ -25834,9 +25831,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25870,9 +25865,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26170,7 +26163,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 10 Переоценка, Уценка ТСД">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="170,42"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 10 Переоценка, Уценка ТСД\Свод временный 1"
@@ -26210,9 +26203,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26274,13 +26265,13 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="201,44"
+          Size="200.8,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа\_Свод_временный1"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="227,44"
+          Size="227.2,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа\_Свод_временный2"
           TopLeft="62.4056603773585,134.330188679245" />
         <EdgeLayout
@@ -26306,9 +26297,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26380,11 +26369,11 @@ AND дата between @dateN and @date</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="175,42"
+          Size="175.2,41.6"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1"
           TopLeft="5.5,5.5" />
         <NodeLayout
-          Size="189,44"
+          Size="188.8,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\Свод_временный_2"
           TopLeft="18.4811320754717,171.235849056604" />
         <EdgeLayout
@@ -26436,13 +26425,13 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="136,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери\_Свод временный2"
           TopLeft="5.5,122.330188679245" />
         <NodeLayout
-          Size="175,42"
+          Size="175.2,41.6"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 6 Остатки списания прочие потери\_Свод_временный1"
           TopLeft="85.3867924528302,5.5" />
         <EdgeLayout
@@ -26476,7 +26465,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26626,7 +26617,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="136,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)\_Свод"
@@ -26666,9 +26657,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27282,7 +27271,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка списаний из ОТБРС (ОТБОР ПО ДАТЕ)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="136,44"
           Id="Package\КПТ по причинам (сбор данных)\ОТБРС\Загрузка списаний из ОТБРС (ОТБОР ПО ДАТЕ)\ОТБРС"
@@ -27314,7 +27303,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -27400,7 +27391,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (сбор данных)\ОТБРС\Заполнение таблицы Нулевые остатки временный&quot;">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\КПТ по причинам (сбор данных)\ОТБРС\Заполнение таблицы Нулевые остатки временный&quot;\ОТБРС_Остатки"
@@ -27440,7 +27431,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

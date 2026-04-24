@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">KES18</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAACAAAAAAADZgAAwAAAABAAAAAkCFsF4yyPVWwAg6AvLlmUAAAAAASAAACgAAAAEAAAADjRvUc0RcQKlqRm9ghmqlSIAAAAxxer4MAm9BQJgXbcaH5pebdOiqdeByxCTvykg38Lc3eD9OCSgFc2GhBxHSFpJFa3/vo7AgYevdGp7CzHX3Ku4zn9h3Te424BQg9DXEEcbFhbF9G8/g4wQmfN01OlO8Gmd6hsINqVuk0x3FDeUUY1MRRPEAn4HwF651RN3rdy7idxxRnv7EKF4BQAAAC0z0T1oXzFqezYyPtFEcfwlODE5A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAACAAAAAAADZgAAwAAAABAAAAAzKxDC5gUf++4H4OU7PWrMAAAAAASAAACgAAAAEAAAAK4xHoOgxJKceIiTIeYyYxaIAAAApGt27VIWAEFcynWVTp3veAPTOQCKRUTcr01ICpm9fpy7mgvxGAJ0YYZecIeHYFbTzomr3IaaFL7bwt/lkM6++EpD3RX6wn8iyMNBGZ3tZJlS9OFW9SooBkLgVgz/fn9O9kzX8f3zqPKw6OHrVokb8moeK/WWDYEF90n7aniEXLnDXQqpCAa+/xQAAAAT/pV/zDnd24gvFCciAMI8Yaho0w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">КПТ по причинам</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">328</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">339</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{524F21EB-0C6E-4A06-883E-83E77C9582DA}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{E1DB3884-9311-4A00-8B67-952B295D1718}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -78,7 +78,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=S12-1C-RSC;Initial Catalog=RSC;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-KTP-{A8A37771-7EAD-4A9A-B00E-A72D7DE99C5F}RSC;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=S12-1C-RSC;User ID=rsc-sql-reader;Initial Catalog=RSC;Provider=SQLOLEDB.1;Application Name=SSIS-KTP-{A8A37771-7EAD-4A9A-B00E-A72D7DE99C5F}RSC;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -197,6 +197,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">rsc-sql-reader</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1082,7 +1083,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=S19-RDSAPP-RSC;Initial Catalog=rsc;Integrated Security=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=S19-RDSAPP-RSC;User ID=rsc-sql-reader;Initial Catalog=rsc;Persist Security Info=True;Connect Timeout=1200;Application Name="SSIS-КПТ по причинам-{3F5EE78F-AC03-4391-B997-7C1DE7FB474B}S19-RDSAPP-RSC.rsc.rsc-sql-reader";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -1171,6 +1172,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">rsc-sql-reader</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
