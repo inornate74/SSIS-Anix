@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ по причинам"
   DTS:PackageType="5"
-  DTS:VersionBuild="347"
-  DTS:VersionGUID="{C08A281C-B355-48F3-9FC4-4E14EB11F4B1}">
+  DTS:VersionBuild="353"
+  DTS:VersionGUID="{7458E52A-CF1E-4C90-ABC9-FA4BB0AF22CC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADGMexW7lHyQ6gY42malgXeAAAAAASAAACgAAAAEAAAAJb2wtdDdULSdE3aEMaTEesYAAAAt6o+aoiFV+xwLgBA4JQgzHT/unW6d+9hFAAAADZ94KgGfh7LfQVOayBgrZPfPT5f</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADiF0BuG6ZdIRL0nMIulAx3AAAAAASAAACgAAAAEAAAAAAZJLDpDsz1iI/Qpp0DHPgYAAAAR73OtPz+u4iyGMkbSkKm2EK2q3NIEppwFAAAAO4qHHIUhnAifyjOZkW0D0H3KefX</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -122,7 +122,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABXYelcwG17Wu89Rxfll+sKAAAAAASAAACgAAAAEAAAACbRIIgE2uDp0ypzkgLkVoEYAAAASTmJObxnOIogYPi4SQWj8EnLk7GjBUczFAAAAGOGr0XgAlW+jPQ15MyTXNMMcJdZ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA0d0k1j2rLEOw6ONzCbMclwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD8Yczyy6i9terdRT61DJigAAAAAASAAACgAAAAEAAAAIHKvbtI40zdqwDbg5lntOkYAAAAXwtBDQ+N9TLXauBEO+jQVXMKTFAWzAtxFAAAAJsjOcuDEkVjtCr4YmIMfb7ae0bO</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -558,7 +558,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -669,7 +669,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               externalMetadataColumnId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Количество]"
                               lineageId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Количество]"
                               name="Количество"
-                              precision="14"
+                              precision="16"
                               scale="3"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
@@ -706,7 +706,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               refId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Количество]"
                               dataType="numeric"
                               name="Количество"
-                              precision="14"
+                              precision="16"
                               scale="3" />
                             <externalMetadataColumn
                               refId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Сумма]"
@@ -746,7 +746,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               dataType="numeric"
                               lineageId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[Количество]"
                               name="Количество"
-                              precision="14"
+                              precision="16"
                               scale="3" />
                             <outputColumn
                               refId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[Сумма]"
@@ -849,7 +849,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               refId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].Columns[Количество]"
                               cachedDataType="numeric"
                               cachedName="Количество"
-                              cachedPrecision="14"
+                              cachedPrecision="16"
                               cachedScale="3"
                               externalMetadataColumnId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].ExternalColumns[Количество]"
                               lineageId="Package\КПТ\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Количество]" />
@@ -971,7 +971,7 @@ declare @dateN as datetime
 declare @date5N as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -1374,7 +1374,7 @@ declare @dateN as datetime
 declare @date5N as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -1841,7 +1841,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -2451,7 +2451,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -2951,7 +2951,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -3355,7 +3355,7 @@ and ЗаказПоставщикуСтроки._Fld2983&gt;0</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3896,7 +3896,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц магазины"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3945,7 +3945,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3992,7 +3992,7 @@ where
 declare @date as datetime
 declare @dateN as datetime
 declare @date2N as datetime
-set @date = convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @date = convert(varchar(16), dateadd(day, -6, getdate()), 112)
 set @date = CASE 
   WHEN DATEPART(weekday, @date) = 1 THEN @date 
   WHEN DATEPART(weekday, @date) = 2 THEN dateadd(day, + 6, @date) 
@@ -5234,7 +5234,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
-set @curdate = convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate = convert(varchar(16), dateadd(day, -6, getdate()), 112)
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -8266,7 +8266,7 @@ where
 declare @dateBegin as datetime
 declare @dateEnd as datetime
 declare @curdate as datetime
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 set @dateEnd =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -10179,7 +10179,7 @@ WHERE
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
-                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад is null &#xA;and  Дата between @dateN and @date&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=dateadd(d,-7,@date) and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;);&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад in (1,4,5,7,8,9,10,0) -- выполняется&#xA;and  Дата between @dateN and @date -- выполняется&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=(Select top (1) tm.Дата from   dwh.td.t_fact_Товарная_матрица as tm where tm.Код_товара=tbl.Код_товара and tm.Код_магазина=tbl.Код_магазина and tm.Дата&lt;=s.Дата&#xA;order by tm.Дата desc ) &#xA;&#xA;and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;) ;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;where  Дата between @dateN and @date&#xA; and &#xA; exists (select * from &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA;&#xA; where  Дата between @dateN and @date&#xA; and &#xA;  (&#xA;select  top 1 tm1.Признак &#xA;   from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  and tm1.Дата&lt;=@dateN&#xA;  &#xA;order by Дата desc) in (1,5,7,8,10,0)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );&#xA;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;&#xA;where Дата between @dateN and @date&#xA;and &#xA;exists&#xA;(select * from &#xA; &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA; &#xA;where  Дата between @dateN and @date&#xA; and exists(&#xA;select   Код_магазина,Код_товара,count(*)  &#xA;  from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  group by Код_магазина,Код_товара&#xA;&#xA;  having count(*)=1)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад is null &#xA;and  Дата between @dateN and @date&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=dateadd(d,-7,@date) and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;);&#xA;&#xA;delete свод &#xA;from свод s &#xA;where ВидАсс14днейНазад in (1,4,5,7,8,9,10,0) -- выполняется&#xA;and  Дата between @dateN and @date -- выполняется&#xA;and  not exists (select *  from dwh.td.v_fact_ПД tbl &#xA;where tbl.Дата_ПД&gt;=(Select top (1) tm.Дата from   dwh.td.t_fact_Товарная_матрица as tm where tm.Код_товара=tbl.Код_товара and tm.Код_магазина=tbl.Код_магазина and tm.Дата&lt;=s.Дата&#xA;order by tm.Дата desc ) &#xA;&#xA;and tbl.Дата_ПД&lt;=s.Дата and tbl.Код_магазина=s.КодМагазина and s.КодТовара=tbl.Код_Товара &#xA;) ;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;where  Дата between @dateN and @date&#xA; and &#xA; exists (select * from &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA;&#xA; where  Дата between @dateN and @date&#xA; and &#xA;  (&#xA;select  top 1 tm1.Признак &#xA;   from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  and tm1.Дата&lt;=@dateN&#xA;  &#xA;order by Дата desc) in (1,5,7,8,10,0)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );&#xA;&#xA;&#xA;delete Свод &#xA;from Свод as s&#xA;&#xA;where Дата between @dateN and @date&#xA;and &#xA;exists&#xA;(select * from &#xA; &#xA;(select tm.код_магазина,Код_товара, дата &#xA; from dwh.td.t_fact_Товарная_матрица tm&#xA; &#xA;where  Дата between @dateN and @date&#xA; and exists(&#xA;select   Код_магазина,Код_товара,count(*)  &#xA;  from dwh.td.t_fact_Товарная_матрица tm1 &#xA;  where Признак!=0&#xA;&#xA;  and tm.Код_товара=tm1.Код_товара &#xA;  and tm.Код_магазина=tm1.Код_магазина&#xA;&#xA;  group by Код_магазина,Код_товара&#xA;&#xA;  having count(*)=1)) as tm&#xA; &#xA;where tm.Дата&gt;s.дата and tm.Код_магазина=s.КодМагазина and s.КодТовара=tm.Код_товара );" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -10198,7 +10198,7 @@ WHERE
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
-                  SQLTask:SqlStatementSource="truncate table Свод_ступень_обработки_1;&#xA;set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;Свод&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="truncate table Свод_ступень_обработки_1;&#xA;set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;Свод&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -12214,25 +12214,36 @@ where tbl.Дата_ПД=C3.Дата and tbl.Код_магазина=C3.КодМ�
  	
  -- Уценки ТСД
 	select
-		 C3.Дата Дата
-		,C3.КодТовара КодТовара
-		,C3.КодПоставщика КодПоставщика
-		,C3.[КодМагазина] [КодМагазина]
-		,0 КПТаутстоков
-		,cast(20 as tinyint) КодПричиныПаденияКПТ
-		,left(LTRIM(RTRIM( convert(varchar, C3.Дата, 112)))+'_'+
-				RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодМагазина as CHAR)))+'_'+
-		LTRIM(RTRIM( CAST(C3.КодПоставщика as CHAR)))
-		,41) ДатаТоварМагазинПоставщик
-	from Свод_временный1 C3 with (nolock)
-	where 
- 		(case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
-		and C3.КодТовара IN (select TOP 1 ТСД .КодТовара from ФактУценкиТСД ТСД with (nolock)
-								where  ТСД .КодТовара = C3.КодТовара
-								AND ТСД .Дата &lt;= C3.Дата
-								AND ТСД .КодМагазина = C3.КодМагазина
-								) 
+     C3.Дата Дата
+    ,C3.КодТовара КодТовара
+    ,C3.КодПоставщика КодПоставщика
+    ,C3.[КодМагазина] [КодМагазина]
+    ,0 КПТаутстоков
+    ,cast(20 as tinyint) КодПричиныПаденияКПТ
+    ,left(LTRIM(RTRIM(convert(varchar, C3.Дата, 112)))+'_'+
+            RTRIM(LTRIM(CAST(C3.КодТовара as CHAR)))+'_'+
+            LTRIM(RTRIM(CAST(C3.КодМагазина as CHAR)))+'_'+
+            LTRIM(RTRIM(CAST(C3.КодПоставщика as CHAR)))
+            ,41) ДатаТоварМагазинПоставщик
+from Свод_временный1 C3 with (nolock)
+where 
+    (case when C3.КолВоДней = null then 0 else Round(C3.ДнейНаСкладеПоОстаткам/C3.КолВоДней*100, 2) end) &lt; 100 
+    and C3.КодТовара IN (
+        select ТСД.КодТовара 
+        from ФактУценкиТСД ТСД with (nolock)
+        where ТСД.КодТовара = C3.КодТовара
+            AND ТСД.Дата &lt;= C3.Дата
+            AND ТСД.КодМагазина = C3.КодМагазина
+            AND ТСД.Дата &gt; (
+                SELECT TOP 1 ПД.Дата_ПД 
+                from DWH.td.v_fact_ПД ПД with (nolock)
+                where ПД.Код_магазина = ТСД.КодМагазина
+                    AND ПД.Код_товара = ТСД.КодТовара
+                    AND ПД.Дата_ПД &lt;= C3.Дата  -- добавили: ПД должен быть до даты свода
+                order by ПД.Дата_ПД desc
+            )
+    ) 
+    
  
  	union all---остатки на уценке---
 	select
@@ -14076,7 +14087,6 @@ where
 		from ОТБРС_КорректировкаЗаказа OK with (nolock)
 		where OK.КодТовара = C3.КодТовара
 		  AND OK.КодМагазина = C3.КодМагазина
-		  AND OK.Дата &lt; C3.Дата
 		  AND OK.Дата &gt;= dateadd(day, -14, C3.Дата)  
 	)
 	
@@ -16314,7 +16324,7 @@ declare @date as datetime
 	declare @dateN as datetime
 	declare @curdate as datetime
 
-	set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+	set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 	set @date =CASE 
 	WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -17190,7 +17200,7 @@ and КодПоставщика &lt;&gt; 8793
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
-              SQLTask:SqlStatementSource="--ОЧИСТКА ПЕРИОДА&#xA;set datefirst 7&#xA;&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete from КартаПричинПаденияКПТ where Дата between @dateN  and @date" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="--ОЧИСТКА ПЕРИОДА&#xA;set datefirst 7&#xA;&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete from КартаПричинПаденияКПТ where Дата between @dateN  and @date" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -17530,7 +17540,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -17912,7 +17922,7 @@ or Количество_факт is null)</property>
                           expressionType="Notify"
                           name="SqlCommand"
                           UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SET                datefirst 7 DECLARE @date AS datetime DECLARE @dateN AS datetime DECLARE @curdate AS datetime
-SET                @curdate = convert(varchar(16), dateadd(day, -1, getdate()), 112)
+SET                @curdate = convert(varchar(16), dateadd(day, -6, getdate()), 112)
 SET                @date = CASE WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, 
                          @curdate) WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) WHEN DATEPART(weekday, @curdate) 
                          = 6 THEN dateadd(day, + 2, @curdate) WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate) END
@@ -19377,7 +19387,7 @@ declare @dateN as datetime
 declare @curdate as datetime
 declare @dateNachPred as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -20421,7 +20431,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -20786,7 +20796,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -21165,7 +21175,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -21610,7 +21620,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -22072,7 +22082,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -22466,7 +22476,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -22840,7 +22850,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
-set @curdate = convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate = convert(varchar(16), dateadd(day, -6, getdate()), 112)
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -23127,7 +23137,7 @@ AND дата between @dateN and @date</property>
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{ACF2DB4A-C351-4E89-845A-CFB8050E8574}"
-              SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;ПричиныПаденияКПТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=convert(varchar(16), dateadd(day, -6, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;ПричиныПаденияКПТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
       </DTS:Executables>
@@ -25368,7 +25378,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="223.2,44"
           Id="Package\КПТ\ОТБРС\Загрузка матрицы\Загрузка матрицы из ОТБРС (отбор по дате)\s8-oalp-test ОТБРС_Матрица"
@@ -25408,7 +25418,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -25795,7 +25807,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="263.2,44"
           Id="Package\КПТ\Формирование итоговой таблицы\Свод_ступень_обработки_1\Преобразование типов"
@@ -25831,7 +25843,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -25865,7 +25879,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26063,7 +26079,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 1 Потери">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="232,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 1 Потери\Преобразование типов"
@@ -26107,9 +26123,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -26143,9 +26157,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26221,7 +26233,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 2 Приказы">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="209,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 2 Приказы\_Свод_временный1"
@@ -26253,9 +26265,7 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26265,7 +26275,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="200.8,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 3 График заказа\_Свод_временный1"
@@ -26297,7 +26307,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26309,7 +26321,7 @@ AND дата between @dateN and @date</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="175,42"
+          Size="175.2,41.6"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 4 недопоставки\_Свод_временный1"
           TopLeft="5.5,5.5" />
         <NodeLayout
@@ -26367,7 +26379,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="175.2,41.6"
           Id="Package\КПТ по причинам (определение причин)\Определение причин\Определение причин Этап 2 5 Причины заказа\_Свод_временный1"
@@ -26407,7 +26419,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -26617,7 +26631,7 @@ AND дата between @dateN and @date</property>
     design-time-name="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="136,44"
           Id="Package\КПТ по причинам (определение причин)\Определение причин Этап 1 (ОТБОР ПО ДАТЕ)\_Свод"
@@ -26657,7 +26671,9 @@ AND дата between @dateN and @date</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
