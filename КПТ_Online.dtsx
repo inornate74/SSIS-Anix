@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/16/2022 8:20:00 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ Online"
   DTS:PackageType="5"
-  DTS:VersionBuild="234"
-  DTS:VersionGUID="{545CD386-DDD0-4EA1-AD9A-159CFABFE121}">
+  DTS:VersionBuild="237"
+  DTS:VersionGUID="{4254E97D-5162-43B9-8C75-2F5A57EB78C0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2171,7 +2171,8 @@ Select
 	end ТОП,
 	ВидАсс,
 	ВидАсс2н,
-	ВидПоставки
+	ВидПоставки,
+Прайд_Сторонник
 From
 (
 	Select
@@ -2211,7 +2212,8 @@ cast(СпрТТТ.Code as bigint) end СпрТТТ,
 				1
 			else
 				0
-		end ВидПоставки
+		end ВидПоставки,
+		cast(СпрТоварМатрица.SP4532 as numeric(1,0)) Прайд_Сторонник
 	From
 		sc1725 СпрТоварМатрица (NoLock)
 	Left Join
@@ -2378,6 +2380,16 @@ where
                                   lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[ВидПоставки]"
                                   name="ВидПоставки"
                                   truncationRowDisposition="FailComponent" />
+                                <outputColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[Прайд_Сторонник]"
+                                  dataType="numeric"
+                                  errorOrTruncationOperation="Преобразование"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Прайд_Сторонник]"
+                                  lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[Прайд_Сторонник]"
+                                  name="Прайд_Сторонник"
+                                  precision="1"
+                                  truncationRowDisposition="FailComponent" />
                               </outputColumns>
                               <externalMetadataColumns
                                 isUsed="True">
@@ -2415,6 +2427,11 @@ where
                                   refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].ExternalColumns[ВидПоставки]"
                                   dataType="i4"
                                   name="ВидПоставки" />
+                                <externalMetadataColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Прайд_Сторонник]"
+                                  dataType="numeric"
+                                  name="Прайд_Сторонник"
+                                  precision="1" />
                               </externalMetadataColumns>
                             </output>
                             <output
@@ -2464,6 +2481,12 @@ where
                                   dataType="i4"
                                   lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Error Output].Columns[ВидПоставки]"
                                   name="ВидПоставки" />
+                                <outputColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Error Output].Columns[Прайд_Сторонник]"
+                                  dataType="numeric"
+                                  lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Error Output].Columns[Прайд_Сторонник]"
+                                  name="Прайд_Сторонник"
+                                  precision="1" />
                                 <outputColumn
                                   refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
                                   dataType="i4"
@@ -2573,6 +2596,20 @@ where
                                   cachedName="ВидПоставки"
                                   externalMetadataColumnId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].ExternalColumns[ВидПоставки]"
                                   lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[ВидПоставки]" />
+                                <inputColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].Columns[Прайд_Сторонник]"
+                                  cachedDataType="numeric"
+                                  cachedName="Прайд_Сторонник"
+                                  cachedPrecision="1"
+                                  externalMetadataColumnId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].ExternalColumns[Прайд_Сторонник]"
+                                  lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[Прайд_Сторонник]" />
+                                <inputColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].Columns[ВидАсс2н]"
+                                  cachedDataType="numeric"
+                                  cachedName="ВидАсс2н"
+                                  cachedPrecision="1"
+                                  externalMetadataColumnId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].ExternalColumns[ВидАсс14денейНазад]"
+                                  lineageId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\DWH.Outputs[ADO NET Source Output].Columns[ВидАсс2н]" />
                               </inputColumns>
                               <externalMetadataColumns
                                 isUsed="True">
@@ -2608,6 +2645,10 @@ where
                                   refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].ExternalColumns[ВидПоставки]"
                                   dataType="bool"
                                   name="ВидПоставки" />
+                                <externalMetadataColumn
+                                  refId="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица.Inputs[ADO NET Destination Input].ExternalColumns[Прайд_Сторонник]"
+                                  dataType="ui1"
+                                  name="Прайд_Сторонник" />
                               </externalMetadataColumns>
                             </input>
                           </inputs>
