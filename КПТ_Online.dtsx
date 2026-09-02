@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ Online"
   DTS:PackageType="5"
-  DTS:VersionBuild="237"
-  DTS:VersionGUID="{4254E97D-5162-43B9-8C75-2F5A57EB78C0}">
+  DTS:VersionBuild="239"
+  DTS:VersionGUID="{298772C0-0417-4C03-835C-275F6B603843}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -499,7 +499,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -1617,7 +1617,7 @@ where
 declare @date as datetime
 declare @dateN as datetime
 declare @date2N as datetime
-set @date =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @date =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @date = CASE 
   WHEN DATEPART(weekday, @date) = 1 THEN @date 
   WHEN DATEPART(weekday, @date) = 2 THEN dateadd(day, + 6, @date) 
@@ -2144,7 +2144,7 @@ where
 declare @date as datetime
 declare @dateN as datetime
 declare @date2N as datetime
-set @date =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @date =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @date = CASE 
   WHEN DATEPART(weekday, @date) = 1 THEN @date 
   WHEN DATEPART(weekday, @date) = 2 THEN dateadd(day, + 6, @date) 
@@ -3104,7 +3104,7 @@ declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
 
-set @curdate =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -4672,7 +4672,7 @@ declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
 
-set @curdate =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -5072,7 +5072,7 @@ DECLARE @date AS datetime;
 DECLARE @dateN AS datetime;
 DECLARE @curdate AS datetime;
 
-SET @curdate = convert(varchar(16), dateadd(day, -1, getdate()), 112);
+SET @curdate = convert(varchar(16), dateadd(day, -2, getdate()), 112);
 
 SET @date = CASE
     WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate
@@ -5480,7 +5480,7 @@ DECLARE @date AS datetime;
 DECLARE @dateN AS datetime;
 DECLARE @curdate AS datetime;
 
-SET @curdate =    convert(varchar(16), dateadd(day, -1, getdate()), 112);
+SET @curdate =    convert(varchar(16), dateadd(day, -2, getdate()), 112);
 
 SET @date = CASE
     WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate
@@ -5873,7 +5873,7 @@ GROUP BY
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
                       SQLTask:Connection="{6EB77BF4-9585-4B34-9A00-2DC94C4751AA}"
-                      SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=  convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete ost from t_fact_Остатки_по_часам as ost&#xA;join (select дата,час,кодмагазина from t_fact_Остатки_по_часам &#xA;&#x9;where Дата  between @dateN and @date group by Дата,час,КодМагазина&#xA;&#x9;having  sum (КоличествоОстаток)=0) as del on ost.Дата=del.Дата and ost.час=del.Час and ost.КодМагазина=del.КодМагазина&#xA;&#x9;&#xA;truncate table [dbo].[t_temp_Остатки_по_часам_ВТ]&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_первый_сорт&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_Главный_код" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                      SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=  convert(varchar(16), dateadd(day, -2, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete ost from t_fact_Остатки_по_часам as ost&#xA;join (select дата,час,кодмагазина from t_fact_Остатки_по_часам &#xA;&#x9;where Дата  between @dateN and @date group by Дата,час,КодМагазина&#xA;&#x9;having  sum (КоличествоОстаток)=0) as del on ost.Дата=del.Дата and ost.час=del.Час and ost.КодМагазина=del.КодМагазина&#xA;&#x9;&#xA;truncate table [dbo].[t_temp_Остатки_по_часам_ВТ]&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_первый_сорт&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_Главный_код" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
               </DTS:Executables>
@@ -5953,7 +5953,7 @@ GROUP BY
 declare @dateBegin as datetime
 declare @dateEnd as datetime
 declare @curdate as datetime
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @dateEnd =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -6789,7 +6789,7 @@ WHERE
 declare @dateBegin as datetime
 declare @dateEnd as datetime
 declare @curdate as datetime
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @dateEnd =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -7689,7 +7689,7 @@ WHERE
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{6EB77BF4-9585-4B34-9A00-2DC94C4751AA}"
-                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=    convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_часам&#xA;where&#xA;&#x9;Дата between @dateN and @date;&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_ЧАСАМ_ВТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=    convert(varchar(16), dateadd(day, -2, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_часам&#xA;where&#xA;&#x9;Дата between @dateN and @date;&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_ЧАСАМ_ВТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
