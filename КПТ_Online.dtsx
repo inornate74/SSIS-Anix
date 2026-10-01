@@ -11,8 +11,8 @@
   DTS:LocaleID="1049"
   DTS:ObjectName="КПТ Online"
   DTS:PackageType="5"
-  DTS:VersionBuild="246"
-  DTS:VersionGUID="{C57D4FC6-1836-4D71-81B4-5038E28D38DD}">
+  DTS:VersionBuild="249"
+  DTS:VersionGUID="{3704B047-9B8D-45B5-80E6-83F67FCE7C5D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -499,7 +499,7 @@ declare @date as datetime
 declare @dateN as datetime
 declare @curdate as datetime
 
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -610,8 +610,8 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               externalMetadataColumnId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Количество]"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Количество]"
                               name="Количество"
-                              precision="16"
-                              scale="3"
+                              precision="18"
+                              scale="4"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Сумма]"
@@ -621,7 +621,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               externalMetadataColumnId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Сумма]"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Сумма]"
                               name="Сумма"
-                              precision="16"
+                              precision="18"
                               scale="2"
                               truncationRowDisposition="FailComponent" />
                           </outputColumns>
@@ -647,13 +647,13 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Количество]"
                               dataType="numeric"
                               name="Количество"
-                              precision="16"
-                              scale="3" />
+                              precision="18"
+                              scale="4" />
                             <externalMetadataColumn
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].ExternalColumns[Сумма]"
                               dataType="numeric"
                               name="Сумма"
-                              precision="16"
+                              precision="18"
                               scale="2" />
                           </externalMetadataColumns>
                         </output>
@@ -687,14 +687,14 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               dataType="numeric"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[Количество]"
                               name="Количество"
-                              precision="16"
-                              scale="3" />
+                              precision="18"
+                              scale="4" />
                             <outputColumn
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[Сумма]"
                               dataType="numeric"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[Сумма]"
                               name="Сумма"
-                              precision="16"
+                              precision="18"
                               scale="2" />
                             <outputColumn
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
@@ -790,15 +790,15 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].Columns[Количество]"
                               cachedDataType="numeric"
                               cachedName="Количество"
-                              cachedPrecision="16"
-                              cachedScale="3"
+                              cachedPrecision="18"
+                              cachedScale="4"
                               externalMetadataColumnId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].ExternalColumns[Количество]"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Количество]" />
                             <inputColumn
                               refId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].Columns[Сумма]"
                               cachedDataType="numeric"
                               cachedName="Сумма"
-                              cachedPrecision="16"
+                              cachedPrecision="18"
                               cachedScale="2"
                               externalMetadataColumnId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи.Inputs[ADO NET Destination Input].ExternalColumns[Сумма]"
                               lineageId="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\DWH.Outputs[ADO NET Source Output].Columns[Сумма]" />
@@ -913,7 +913,7 @@ and mag.Группа in ('Розница', 'РС Закрытие')</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Магазины_temp_load"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="2">
+                  DTS:ThreadHint="1">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -1521,7 +1521,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Слияние таблиц магазины"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="2">
+                  DTS:ThreadHint="1">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -1570,7 +1570,7 @@ where
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы ОТБРС_Матрица"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="3">
+                  DTS:ThreadHint="2">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -1617,7 +1617,7 @@ where
 declare @date as datetime
 declare @dateN as datetime
 declare @date2N as datetime
-set @date =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @date =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @date = CASE 
   WHEN DATEPART(weekday, @date) = 1 THEN @date 
   WHEN DATEPART(weekday, @date) = 2 THEN dateadd(day, + 6, @date) 
@@ -2144,7 +2144,7 @@ where
 declare @date as datetime
 declare @dateN as datetime
 declare @date2N as datetime
-set @date =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @date =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @date = CASE 
   WHEN DATEPART(weekday, @date) = 1 THEN @date 
   WHEN DATEPART(weekday, @date) = 2 THEN dateadd(day, + 6, @date) 
@@ -2696,7 +2696,7 @@ where
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Задача &quot;Выполнение SQL&quot;"
-                  DTS:ThreadHint="3">
+                  DTS:ThreadHint="2">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3037,7 +3037,7 @@ FROM         SC5650 (nolock)</property>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы маркетинговый классфикатор и добавление значения &quot;Не заполнено&quot;"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="4">
+                  DTS:ThreadHint="3">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -3104,7 +3104,7 @@ declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
 
-set @curdate =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -3478,7 +3478,7 @@ group by tsd.Дата,tsd.Код_Магазина,vt.Основной_код_SNU
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Очистка таблицы Продажи ТСД"
-                  DTS:ThreadHint="5">
+                  DTS:ThreadHint="4">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -3517,7 +3517,7 @@ group by tsd.Дата,tsd.Код_Магазина,vt.Основной_код_SNU
                   DTS:LocaleID="-1"
                   DTS:ObjectName="s8-oalp-test Очистка таблицы Товары"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="5">
                   <DTS:Variables />
                   <DTS:LoggingOptions
                     DTS:FilterKind="0" />
@@ -4672,7 +4672,7 @@ declare @dateN as datetime
 declare @curdate as datetime
 declare @Дата date;
 
-set @curdate =  convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate =  convert(varchar(16), dateadd(day, -2, getdate()), 112)
 
 set @date = CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
@@ -5072,7 +5072,7 @@ DECLARE @date AS datetime;
 DECLARE @dateN AS datetime;
 DECLARE @curdate AS datetime;
 
-SET @curdate = convert(varchar(16), dateadd(day, -1, getdate()), 112);
+SET @curdate = convert(varchar(16), dateadd(day, -2, getdate()), 112);
 
 SET @date = CASE
     WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate
@@ -5480,7 +5480,7 @@ DECLARE @date AS datetime;
 DECLARE @dateN AS datetime;
 DECLARE @curdate AS datetime;
 
-SET @curdate =    convert(varchar(16), dateadd(day, -1, getdate()), 112);
+SET @curdate =    convert(varchar(16), dateadd(day, -2, getdate()), 112);
 
 SET @date = CASE
     WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate
@@ -5902,7 +5902,7 @@ GROUP BY
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
                       SQLTask:Connection="{6EB77BF4-9585-4B34-9A00-2DC94C4751AA}"
-                      SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=  convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete ost from t_fact_Остатки_по_часам as ost&#xA;join (select дата,час,кодмагазина from t_fact_Остатки_по_часам &#xA;&#x9;where Дата  between @dateN and @date group by Дата,час,КодМагазина&#xA;&#x9;having  sum (КоличествоОстаток)=0) as del on ost.Дата=del.Дата and ost.час=del.Час and ost.КодМагазина=del.КодМагазина&#xA;&#x9;&#xA;truncate table [dbo].[t_temp_Остатки_по_часам_ВТ]&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_первый_сорт&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_Главный_код" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                      SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=  convert(varchar(16), dateadd(day, -2, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete ost from t_fact_Остатки_по_часам as ost&#xA;join (select дата,час,кодмагазина from t_fact_Остатки_по_часам &#xA;&#x9;where Дата  between @dateN and @date group by Дата,час,КодМагазина&#xA;&#x9;having  sum (КоличествоОстаток)=0) as del on ost.Дата=del.Дата and ost.час=del.Час and ost.КодМагазина=del.КодМагазина&#xA;&#x9;&#xA;truncate table [dbo].[t_temp_Остатки_по_часам_ВТ]&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_первый_сорт&#xA;truncate table [dbo].t_temp_Остатки_по_часам_ВТ_Главный_код" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
                   </DTS:ObjectData>
                 </DTS:Executable>
               </DTS:Executables>
@@ -5982,7 +5982,7 @@ GROUP BY
 declare @dateBegin as datetime
 declare @dateEnd as datetime
 declare @curdate as datetime
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @dateEnd =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -6818,7 +6818,7 @@ WHERE
 declare @dateBegin as datetime
 declare @dateEnd as datetime
 declare @curdate as datetime
-set @curdate= convert(varchar(16), dateadd(day, -1, getdate()), 112)
+set @curdate= convert(varchar(16), dateadd(day, -2, getdate()), 112)
 set @dateEnd =CASE 
 WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate 
 WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) 
@@ -7718,7 +7718,7 @@ WHERE
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{6EB77BF4-9585-4B34-9A00-2DC94C4751AA}"
-                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=    convert(varchar(16), dateadd(day, -1, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_часам&#xA;where&#xA;&#x9;Дата between @dateN and @date;&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_ЧАСАМ_ВТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="set datefirst 7&#xA;&#xA;declare @date as datetime&#xA;declare @dateN as datetime&#xA;declare @curdate as datetime&#xA;&#xA;set @curdate=    convert(varchar(16), dateadd(day, -2, getdate()), 112)&#xA;&#xA;set @date =CASE &#xA;WHEN DATEPART(weekday, @curdate) = 1 THEN @curdate &#xA;WHEN DATEPART(weekday, @curdate) = 2 THEN dateadd(day, + 6, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 3 THEN dateadd(day, + 5, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 4 THEN dateadd(day, + 4, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 5 THEN dateadd(day, + 3, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 6 THEN dateadd(day, + 2, @curdate) &#xA;WHEN DATEPART(weekday, @curdate) = 7 THEN dateadd(day, + 1, @curdate)&#xA;END&#xA;set @dateN = dateadd(dd, -6, @date)&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_часам&#xA;where&#xA;&#x9;Дата between @dateN and @date;&#xA;&#xA;delete &#xA;from &#xA;&#x9;t_fact_КПТ_по_ЧАСАМ_ВТ&#xA;where&#xA;&#x9;Дата between @dateN and @date;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -8608,7 +8608,7 @@ WHERE
     design-time-name="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="212,42"
           Id="Package\КПТ online\DWH Продажи\Продажи OLAP (ОТБОР ПО ДАТЕ)\s8-olap-test OLAP_продажи"
@@ -8648,9 +8648,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8744,7 +8742,7 @@ WHERE
     design-time-name="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы  Признак 5 (отбор по дате) 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="223,44"
           Id="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы  Признак 5 (отбор по дате) 1\s8-oalp-test ОТБРС_Матрица"
@@ -8784,9 +8782,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -8812,7 +8808,7 @@ WHERE
     design-time-name="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="223,44"
           Id="Package\КПТ online\ОТБРС\Загрузка матрицы\Загрузка матрицы из DWH (отбор по дате)\s8-oalp-test ОТБРС_Матрица"
@@ -8852,9 +8848,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9008,7 +9002,7 @@ WHERE
     design-time-name="Package\КПТ online\ОТБРС\Загрузка товаров\Загрузка товаров из ОТБРС">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="136,44"
           Id="Package\КПТ online\ОТБРС\Загрузка товаров\Загрузка товаров из ОТБРС\ОТБРС"
@@ -9052,9 +9046,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9080,9 +9072,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9304,7 +9294,7 @@ WHERE
     design-time-name="Package\КПТ online\ОТБРС\Контейнер последовательности\Загрузка остатков первый сорт">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="185,42"
           Id="Package\КПТ online\ОТБРС\Контейнер последовательности\Загрузка остатков первый сорт\Назначение ADO NET"
@@ -9344,7 +9334,9 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -9370,7 +9362,7 @@ WHERE
     design-time-name="Package\КПТ online\Формирование КПТ Онлайн\Свод_ступень_обработки_1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="215,42"
           Id="Package\КПТ online\Формирование КПТ Онлайн\Свод_ступень_обработки_1\Свод_ступень_обработки_1"
@@ -9402,9 +9394,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9438,9 +9428,7 @@ WHERE
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
